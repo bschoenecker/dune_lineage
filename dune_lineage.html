@@ -31,6 +31,8 @@
           }),
         });
 
+
+
         // Function to determine the background color based on Gender
         function genderColorConverter(gender) {
           if (gender === "male") return "#e6f7ff"; // very light blue
@@ -187,12 +189,8 @@
           $(
             go.Link,
             { routing: go.Link.Orthogonal, curve: go.Link.Bezier, corner: 25 },
-            $(go.Shape, { strokeWidth: 2, stroke: "black" }),
-            $(go.Shape, {
-              toArrow: "Standard",
-              stroke: "black",
-              fill: "black",
-            }),
+            $(go.Shape, { strokeWidth: 2 }, new go.Binding("stroke", "color")),
+            $(go.Shape, { toArrow: "Standard", stroke: null }, new go.Binding("fill", "color")),
             new go.Binding("curviness", "curviness"),
             new go.Binding("opacity", "isRootLink", function (isRootLink) {
               return isRootLink ? 0 : 1; // Make root-related links fully transparent
@@ -440,6 +438,16 @@
             Reference: "- Prelude to Dune trilogy",
           },
           {
+            key: 25,
+            Name: "Octa Butler",
+            Gender: "female",
+            House: "none",
+            Context:
+              "",
+            Reference: "- Legends of Dune trilogy",
+            group: 40
+          },
+          {
             key: 21,
             Name: "Xavier Harkonnen",
             Gender: "male",
@@ -499,7 +507,7 @@
           { from: 1, to: 2 }, // Atreus to Agamemnon
           { from: 2, to: 6 }, // Agamemnon to Vorian
           { from: 2, to: 4 }, // Agamemnon to Hyla
-          { from: 2, to: 5, curviness: 20 }, // Agamemnon to Andros
+          { from: 2, to: 5 }, // Agamemnon to Andros
           { from: 6, to: 3, category: "HorizontalRight" }, //Vorian to Karida
           { from: 6, to: 7 }, // Leronic to Estes
           { from: 9, to: 7 }, //Vorian to Estes
@@ -521,7 +529,12 @@
           { from: 21, to: 19, category: "HorizontalRight"}, //Xavier to Serena
           { from: 23, to: 22, category: "HorizontalRight"},
           { from: 21, to: 24 }, //Xavier to Manion Jr.
-          { from: 19, to: 24 } //Serena to Manion Jr.
+          { from: 19, to: 24 }, //Serena to Manion Jr.
+          { from: 22, to: 19 }, //Manion Sr. to Serena
+          { from: 23, to: 19 }, //Livia to Serena
+          { from: 25, to: 21, category: "HorizontalRight"},
+          { from: 22, to: 25 }, //Manion Sr. to Octa
+          { from: 23, to: 25 } //Livia to Octa
         ];
         myDiagram.groupTemplate = $(
           go.Group,
@@ -537,7 +550,13 @@
           //$(go.Shape, { fill: null, stroke: "gray", strokeWidth: 2 }),
           $(go.Placeholder, { padding: 5 })
         );
+        // Define the rainbow colors
+        var rainbowColors = ["blue", "red", "green"];
 
+      // Assign colors to links in the link data
+      for (var i = 0; i < linkDataArray.length; i++) {
+        linkDataArray[i].color = rainbowColors[i % rainbowColors.length];
+      }
         // Create the Model
         myDiagram.model = new go.GraphLinksModel(nodeDataArray, linkDataArray);
       }
