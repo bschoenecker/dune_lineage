@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GoJS Family Tree Diagram without Marriage Nodes</title>
+    <!-- Include GoJS library -->
+    <script src="https://unpkg.com/gojs/release/go-debug.js"></script>
+    <style>
+      body {
+        font-family: sans-serif;
+      }
+      #myDiagramDiv {
+        background-color: #f2f2f2;
+        border: solid 1px black;
+        width: 100%;
+        height: 900px;
+      }
+    </style>
+    <script>
+      function init() {
+        var $ = go.GraphObject.make;
+
+        // Create the Diagram
+        var myDiagram = $(go.Diagram, "myDiagramDiv", {
+          initialDocumentSpot: go.Spot.Top,
+          initialViewportSpot: go.Spot.Top,
+          "undoManager.isEnabled": true,
+          layout: $(go.LayeredDigraphLayout, {
+            direction: 90,
+            layerSpacing: 75,
+            columnSpacing: 75,
+          }),
+        });
+
+        // Function to determine the background color based on Gender
+        function genderColorConverter(gender) {
+          if (gender === "male") return "#e6f7ff"; // very light blue
+          if (gender === "female") return "#ffe6ff"; // very light pink
+          return "white";
+        }
+
+        // Node template
+        myDiagram.nodeTemplate = $(
+          go.Node,
+          "Auto",
+          {
+            layerName: "Foreground",
+            locationSpot: go.Spot.Center,
+            isShadowed: true,
+            shadowBlur: 1,
+            shadowOffset: new go.Point(0, 1),
+            shadowColor: "rgba(0, 0, 0, .14)",
+            selectionAdornmentTemplate: $(
+              go.Adornment,
+              "Auto",
+              $(go.Shape, "RoundedRectangle", {
+                fill: null,
+                stroke: "#7986cb",
+                strokeWidth: 3,
+              }),
+              $(go.Placeholder)
+            ),
+          },
+          new go.Binding("opacity", "isRoot", function (isRoot) {
+            return isRoot ? 0 : 1; // Make the root node fully transparent
+          }),
+          // Main shape with border
+          $(
+            go.Shape,
+            "RoundedRectangle",
+            {
+              name: "SHAPE",
+              fill: "#ffffff",
+              stroke: "black",
+              strokeWidth: 2,
+            },
+            new go.Binding("fill", "Gender", genderColorConverter)
+          ),
+          // Vertical panel inside the shape
+          $(
+            go.Panel,
+            "Vertical",
+            { defaultAlignment: go.Spot.Left, margin: 8 },
+            // Horizontal panel for image and content
+            $(
+              go.Panel,
+              "Horizontal",
+              { margin: 8 },
+
+              // House Image
+              $(
+                go.Picture,
+                {
+                  margin: new go.Margin(0, 8, 0, 0),
+                  width: 50,
+                  height: 50,
+                },
+                new go.Binding("source", "House", function (house) {
+                  return "../images/" + house + ".png";
+                })
+              ),
+              // Vertical panel for Name and House TextBlocks
+              $(
+                go.Panel,
+                "Vertical",
+                { defaultAlignment: go.Spot.Left },
+                // Name TextBlock
+                $(
+                  go.TextBlock,
+                  {
+                    font: "16px sans-serif",
+                    stroke: "rgba(0, 0, 0, .87)",
+                    maxSize: new go.Size(160, NaN),
+                  },
+                  new go.Binding("text", "Name")
+                ),
+                // House TextBlock
+                $(
+                  go.TextBlock,
+                  {
+                    font: "12px sans-serif",
+                    stroke: "rgba(0, 0, 0, .60)",
+                    maxSize: new go.Size(160, NaN),
+                  },
+                  new go.Binding("text", "House", function (house) {
+                    if (house === "none") return ""; // Avoid displaying "House None"
+                    if (house === "benegesserit") return "Bene Gesserit"; //exception for Bene Gesserit
+                    if (house === "suk") return "Suk School"; //exception for Suk School
+                    var houseName =
+                      house.charAt(0).toUpperCase() + house.slice(1);
+                    return "House " + houseName;
+                  }),
+                  new go.Binding("visible", "House", function (house) {
+                    return house !== "none"; // Only visible if house is not "none"
+                  })
+                )
+              ),
+
+              // PanelExpanderButton
+              $("PanelExpanderButton", "INFO", {
+                margin: new go.Margin(0, 0, 0, 8),
+              })
+            ), // end Horizontal panel
+            // Context panel
+            $(
+              go.Panel,
+              "Vertical",
+              {
+                name: "INFO",
+                stretch: go.GraphObject.Horizontal,
+                visible: false,
+                padding: 5,
+                background: "lightyellow",
+                defaultAlignment: go.Spot.Left,
+              },
+              $(
+                go.TextBlock,
+                {
+                  font: "12px sans-serif",
+                  stroke: "rgba(0, 0, 0, .87)",
+                  wrap: go.TextBlock.WrapFit,
+                  editable: false,
+                },
+                new go.Binding("text", "Context")
+              )
+            ),
+            $(
+              go.TextBlock,
+              {
+                font: "10px sans-serif",
+                stroke: "gray",
+                alignment: go.Spot.BottomCenter,
+                margin: new go.Margin(5, 0, 0, 0), // Small margin below the content
+                wrap: go.TextBlock.WrapFit,
+                maxSize: new go.Size(160, NaN), // Limit the width of the reference text
+                textAlign: "center",
+              },
+              new go.Binding("text", "Reference")
+            )
+
+            // end Context panel
+          ) // end Vertical panel
+        );
+
+        // Vertical/Normal link template
+        myDiagram.linkTemplateMap.add(
+          "", // Default category
+          $(
+            go.Link,
+            { routing: go.Link.Orthogonal, curve: go.Link.Bezier, corner: 25 },
+            $(go.Shape, { strokeWidth: 2, stroke: "black" }),
+            $(go.Shape, {
+              toArrow: "Standard",
+              stroke: "black",
+              fill: "black",
+            }),
+            new go.Binding("curviness", "curviness"),
+            new go.Binding("opacity", "isRootLink", function (isRootLink) {
+              return isRootLink ? 0 : 1; // Make root-related links fully transparent
+            })
+          )
+        );
+
+        // Horizontal Left link template
+        myDiagram.linkTemplateMap.add(
+          "HorizontalLeft",
+          $(
+            go.Link,
+            {
+              routing: go.Link.Orthogonal,
+              corner: 10,
+              curve: go.Link.None,
+              fromSpot: go.Spot.Left,
+              toSpot: go.Spot.Right,
+              selectable: true,
+            },
+            $(go.Shape, { strokeWidth: 2, stroke: "black" }), // Link path
+            new go.Binding("opacity", "isRootLink", function (isRootLink) {
+              return isRootLink ? 0 : 1; // Make root-related links fully transparent
+            }),
+            // Add a circle icon in the center of the link
+            $(
+              go.Panel,
+              "Auto",
+              { alignment: go.Spot.Center }, // Center the panel on the link
+              $(
+                go.Shape,
+                "Circle", // Replacing with Circle temporarily for debugging
+                {
+                  fill: "red", // Customize the color
+                  stroke: null, // No border
+                  desiredSize: new go.Size(15, 15), // Set the size of the icon
+                }
+              )
+            )
+          )
+        );
+
+        // Horizontal Right link template
+        myDiagram.linkTemplateMap.add(
+          "HorizontalRight",
+          $(
+            go.Link,
+            {
+              routing: go.Link.Orthogonal,
+              corner: 10,
+              curve: go.Link.None,
+              fromSpot: go.Spot.Right,
+              toSpot: go.Spot.Left,
+              selectable: true,
+            },
+            $(go.Shape, { strokeWidth: 2, stroke: "black" }), // Link path
+            new go.Binding("opacity", "isRootLink", function (isRootLink) {
+              return isRootLink ? 0 : 1; // Make root-related links fully transparent
+            }),
+            // Add a circle icon in the center of the link
+            $(
+              go.Panel,
+              "Auto",
+              { alignment: go.Spot.Center }, // Center the panel on the link
+              $(
+                go.Shape,
+                "Circle", // Replacing with Circle temporarily for debugging
+                {
+                  fill: "red", // Customize the color
+                  stroke: null, // No border
+                  desiredSize: new go.Size(15, 15), // Set the size of the icon
+                }
+              )
+            )
+          )
+        );
+
+        // Sample data
+        var nodeDataArray = [
+          { key: "Root", Name: "Dummy Root", isRoot: true },
+          {
+            key: 1,
+            Name: "Atreus",
+            Gender: "male",
+            House: "none",
+            Context:
+              "House Atreides gets its name from Atreus, a king in Greek mythology who was the father of Agamemnon and Menelaus. This connection is symbolic, linking the Atreides family to a long tradition of noble (and sometimes troubled) leadership. But as far as Dune is concerned, Atreus himself doesn’t show up, do anything, or even get mentioned much beyond the genealogical footnote.",
+            Reference: "- Legends of Dune Trilogy",
+          },
+          {
+            key: 2,
+            Name: "Agamemnon",
+            Gender: "male",
+            House: "none",
+            Context:
+              "Agamemnon started out as a human long before the Jihad. Along with a group of other ambitious elites, he transcended mortality by transferring his brain into a mechanical body, becoming a “cymek.” As a cymek, he was essentially a human brain controlling a powerful, engineered shell. Agamemnon and the other Titans conquered vast swathes of the old empire, ruling ruthlessly and paving the way for the artificial intelligence collective known as Omnius to rise to power. The Titans, once in control, gradually became overshadowed by their own creation—this omnipresent AI network—though they never quite gave up their personal ambitions.",
+            Reference: "- Legends of Dune Trilogy",
+          },
+          {
+            key: 6,
+            Name: "Vorian Atriedes",
+            Gender: "male",
+            House: "atriedes",
+            Context:
+              "Vorian Atreides was the son of Agamemnon, created from his genetic material. Vorian, born and raised among these machine rulers, initially serves as a liaison between Omnius (the evermind controlling the machines) and various human worlds. Unlike his father and the other Titans, he retains a strong sense of morality and empathy. Over time, he becomes deeply disillusioned by the cruelty of the machine empire. A turning point comes when Vorian encounters free humans fighting desperately to liberate themselves. He defects to the human side, bringing valuable knowledge that helps tip the scales in the Butlerian Jihad. Through acts of bravery, tactical brilliance, and personal sacrifice, he emerges as a heroic figure. His actions and principles—valor, honor, compassion—would go on to define the ethical backbone of House Atreides for millennia to come.",
+            group: 10,
+            Reference: "- Legends of Dune Trilogy",
+          },
+          {
+            key: 4,
+            Name: "Hyla",
+            Gender: "female",
+            House: "none",
+            Context:
+              "Hyla was the only daughter of the Titan general Agamemnon, born along with her brother Andros during the Titans' time on Richese. They were trained in great skills by their father, along with the other two remaining Titans, Juno and Dante, and given life-extension treatment and machine strength. In 108 BG, after the end of the Butlerian Jihad, Hyla and Andros were imprisoned in a preservation vault by the Titans. They were rescued by members of the Butlerian movement in 5 BG, long after the defeat of the Titans and the Omnius evermind, deciding to find their traitorous brother Vorian Atreides and potentially convert him back to the side of the thinking machines",
+            Reference: "- Legends of Dune Trilogy",
+          },
+          {
+            key: 5,
+            Name: "Andros",
+            Gender: "male",
+            House: "none",
+            Context:
+              "Andros was the fourteenth son of the Titan general Agamemnon, born along with his sister Hyla during the Titans' time on Richese. They were trained in great skills by their father, along with the other two remaining Titans, Juno and Dante, and given life-extension treatment and machine strength. In 108 BG, after the end of the Butlerian Jihad, Andros and Hyla were imprisoned in a preservation vault by the Titans. They were rescued by members of the Butlerian movement in 5 BG, long after the defeat of the Titans and the Omnius evermind, deciding to find their traitorous brother Vorian Atreides and potentially convert him back to the side of the thinking machines",
+            Reference: "- Legends of Dune Trilogy",
+          },
+          {
+            key: 9,
+            Name: "Leronica Tergiet",
+            Gender: "female",
+            House: "none",
+            Context:
+              "Leronica Tergiet is significant because she becomes the partner of Vorian Atreides during the Butlerian Jihad and mothers his children, thus helping to establish the human lineage that will evolve into the noble House Atreides. Her relationship with Vorian provides a grounding human connection that contrasts with his extraordinary lifespan, leaving a lasting legacy that influences the future Atreides line",
+            group: 10,
+            Reference: "- Legends of Dune Trilogy",
+          },
+          { key: 10, isGroup: true },
+          { key: 30, isGroup: true },
+          {
+            key: 7,
+            Name: "Estes Atriedes (Vazz)",
+            Gender: "male",
+            House: "atriedes",
+            Context:
+              "Estes Atreides was one of the twin sons of Vorian Atreides and Leronica Tergiet. Estes was taller and more flamboyant compared to his brother Kagin. He and his brother were grown by their foster father, Kalem Vazz on Caladan, until he was killed by elecrans when they were young. Vorian tried to return to Leronica and get to know the boys better but did not want to spoil their memories by revealing he was their true father, a fact the teen boys discovered by accident; they were shocked since they preferred the memories with Vazz. Vorian attempted to have good connections with his sons and took care for their proper schooling but they were still distant to him, although Leronica insisted on taking his name. The distance was bigger towards Estes with whom he had gotten into a quarrel over a minor sarcastic comment. The two brothers took a regular dose of melange which helped them retain youthful appearances in their sixties, although Vorian still looked like their grandson.",
+            Reference: "- Legends of Dune Trilogy",
+          },
+          {
+            key: 8,
+            Name: "Kagin Atriedes (Vazz)",
+            Gender: "male",
+            House: "atriedes",
+            Context:
+              "Kagin Atreides is one of the twin sons of Vorian Atreides and Leronica Tergiet. Kagin was quieter and shorter, introspective follower compared to his brother Estes. He and his brother were grown by their foster father, Kalem Vazz on Caladan, until he was killed by elecrans when they were young. Vorian tried to return to Leronica and meet the boys better but did not want to spoil their memories by revealing he was their true father, until Kagin discovered it himself by accident. The teen boys were shocked since they preferred the memories with Vazz. Vorian attempted his sons to have good connections, proper schooling but they were still distant to him, although Leronica insisted to take his name. The two brothers took a regular dose of melange which helped them retain youthful appearances in his sixties, although Vorian still looked like their grandson.",
+            Reference: "- Legends of Dune Trilogy",
+          },
+          {
+            key: 3,
+            Name: "Karida Julan",
+            Gender: "female",
+            House: "none",
+            Context:
+              "Karida Julan was a girl from Hagal whom Vorian Atreides had met during his missions for the Butlerian Jihad. When she told him she bore a daughter, Vorian had sent plenty of credits to support the child and her mother. Since finding Leronica Tergiet, though, he'd had no further contact with her.",
+            group: 10,
+            Reference: "- Legends of Dune Trilogy",
+          },
+          {
+            key: 11,
+            Name: "Helmina Berto-Anirul",
+            Gender: "female",
+            House: "none",
+            Context:
+              "Helmina Berto-Anirul was the illegitimate daughter of Vorian Atreides and Karida Julan. Late in her life, she had a daughter, Raquella Berto-Anirul. She died in a groundcar accident before Vorian could meet her.",
+            Reference: "- Legends of Dune Trilogy",
+          },
+          {
+            key: 12,
+            Name: "Raquella Berto-Anirul",
+            Gender: "female",
+            House: "benegesserit",
+            Context:
+              "Original founder of the Bene Gesserit. Vorian's granddaughter Raquella Berto-Anirul is significant because she takes the raw potential of a group of gifted sorcerer women on Rossak and molds them into the Bene Gesserit—one of the most influential and enduring sisterhoods in Dune’s universe. Her adaptability, survival skills, and visionary leadership set the stage for much of the intrigue and subtle power-brokering that define the Sisterhood in the centuries to come.",
+            Reference: "- Legends of Dune Trilogy \n - Schools of Dune Trilogy",
+            group: 20,
+          },
+          {
+            key: 13,
+            Name: "Arlett",
+            Gender: "female",
+            House: "benegesserit",
+            Context:
+              "Daughter from Raquella and Dr. Mohandas Suk. Arlett was compelled to stay with the school and became a graduate of the Sisterhood. She then became a traveller, stopping in at out-of-the-way places to discuss the Rossak school. This included a stop at Lankiveil where she recruited Valya Harkonnen. Arlett also refuses to be separated from Dorotea (her daughter), insisting that she would leave the Sisterhood and find Dorotea's father",
+            Reference: "- Legends of Dune Trilogy \n - Schools of Dune Trilogy",
+          },
+          {
+            key: 14,
+            Name: "Mohandes Suk",
+            Gender: "male",
+            House: "suk",
+            Context:
+              "Dr. Mohandas Suk was the grandnephew of the great Rajid Suk and the founder of the Suk Medical School. With his lover, Raquella Berto-Anirul (granddaughter of Vorian Atreides) they established the Hospital for Incurable Diseases on Parmentier, a former Synchronized World recolonized by the League of Nobles. Later, in 107 BG, Mohandas and Raquella founded the Humanities Medical Commission and went to more than thirty planets in their efforts to treat plague victims with the help of LS Recovery, a medical starship bought for them by Vorian. In 88 BG, they traveled to Rossak to help fight the Rossak Epidemic another outbreak of the Scourge. Mohandas remained on board the LS Recovery studying samples sent by Raquella and trying to find a vaccine. The two saw each other very rarely during that condition, due to the quarantine. After that situation was resolved, Mohandas saw Raquella for one last time and conceived a child with her. Raquella chose to stay on Rossak to lead the Sorceresses in a new Sisterhood. ",
+            Reference: "- Legends of Dune Trilogy \n - Schools of Dune Trilogy",
+            group: 20,
+          },
+          { key: 20, isGroup: true },
+          {
+            key: 15,
+            Name: "Doritea",
+            Gender: "female",
+            House: "benegesserit",
+            Context:
+              "Dorotea was the second Reverend Mother in history, the founder and leader of the schismatic Orthodox Sisterhood on Salusa Secundus, and Truthsayer to Padishah Emperor Salvador Corrino. When Dorotea goes through the agony she gains access to her Other Memory, and this is when she discovers she is the daughter of Arlett and the grand-daughter of Raquella. Dorotea had never known her mother, but could now see that Arlett was cast out of the Sisterhood after giving birth to her (this is where she became a travelling recruiter). Dorotea also became aware of Raquella's actions in switching the babies around (i.e. Arlett's daughter), but also, more importantly she had access to Other Memory when it came to the breeding records, and the thinking machines being used by the Sisterhood to do so.",
+            Reference: "- Schools of Dune Trilogy",
+          },
+          {
+            key: 17,
+            Name: "Ulf Harkonnen",
+            Gender: "male",
+            House: "harkonnen",
+            Context:
+              "Ulf Harkonnen (d. 217 BG) was the father of Piers and Xavier Harkonnen, and the husband of Katarina Harkonnen. He was the holder of the family's mining business on Hagal and true to Harkonnen tradition, he was naive, cruel, gruff and defiant, to the dismay of his more humanistic son. On the family's way to Salusa Secundus he scorned his son for his humanistic views towards the slaves which would harm the business. When they entered Caladan system, their space yaught was attacked by six patrolling cymeks led by Agamemnon. Ulf bravely and defiantly responded to the attack, but the doomed ship was not fit for such circumstances. Piers was ejected in a lifepod but it was too late for his parents and both perished in the explosion.",
+            Reference: "- Prelude to Dune trilogy",
+            category: "MainSource",
+            group: 30
+          },
+          {
+          key: 16,
+            Name: "Katarina du Bohan",
+            Gender: "female",
+            House: "none",
+            Context:
+              "She was a member of the noble House du Bohan before marrying into House Harkonnen. Her marriage helped strengthen the political power of House Harkonnen, as alliances through marriage were a common strategy among noble families in the Dune universe to consolidate influence and resources.",
+            Reference: "- Prelude to Dune trilogy",
+            category: "MainSource",
+            group: 30
+          },
+        ];
+
+        var linkDataArray = [
+          // Parent-child links directly from each parent to the child
+          { from: "Root", to: 1, isRootLink: true },
+          { from: "Root", to: 16, isRootLink: true },
+          { from: 1, to: 2 }, // Atreus to Agamemnon
+          { from: 2, to: 6 }, // Agamemnon to Vorian
+          { from: 2, to: 4 }, // Agamemnon to Hyla
+          { from: 2, to: 5, curviness: 20 }, // Agamemnon to Andros
+          { from: 6, to: 3, category: "HorizontalRight" }, //Vorian to Karida
+          { from: 6, to: 7 }, // Leronic to Estes
+          { from: 9, to: 7 }, //Vorian to Estes
+          { from: 6, to: 8 }, // Leronic to Kagin
+          { from: 9, to: 8 }, //Vorian to Kagin
+          { from: 6, to: 9, category: "HorizontalLeft" }, // Vorian to Leronica
+          { from: 6, to: 11 }, //Vorian to Helmina
+          { from: 3, to: 11 }, //Karida to Helmina
+          { from: 11, to: 12 }, //Helmina to Raquella
+          { from: 12, to: 13 }, //Raquella to Arlett
+          { from: 14, to: 12, category: "HorizontalRight" }, //Mohandas Suk to Raquella
+          { from: 14, to: 13 }, //Mohandes SUk to Arlett
+          { from: 13, to: 15 }, //Arlett to Doritea
+          { from: 17, to: 16, category: "HorizontalRight" }
+        ];
+        myDiagram.groupTemplate = $(
+          go.Group,
+          "Auto",
+          {
+            layout: $(go.GridLayout, {
+              spacing: new go.Size(20, 0),
+              sorting: go.GridLayout.Descending, // Ensures left-to-right order
+              comparer: (a, b) => a.data.key - b.data.key, // Sorts by 'key'
+            }),
+          },
+          // If you do want to maintain the group but just not show any text:
+          //$(go.Shape, { fill: null, stroke: "gray", strokeWidth: 2 }),
+          $(go.Placeholder, { padding: 5 })
+        );
+
+        // Create the Model
+        myDiagram.model = new go.GraphLinksModel(nodeDataArray, linkDataArray);
+      }
+      window.addEventListener("DOMContentLoaded", init);
+    </script>
+  </head>
+  <body>
+    <div id="myDiagramDiv"></div>
+  </body>
+</html>
