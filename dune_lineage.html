@@ -179,7 +179,6 @@
               new go.Binding("text", "Reference")
             )
 
-            // end Context panel
           ) // end Vertical panel
         );
 
@@ -222,11 +221,11 @@
               { alignment: go.Spot.Center }, // Center the panel on the link
               $(
                 go.Shape,
-                "Circle", // Replacing with Circle temporarily for debugging
+                "Circle", 
                 {
-                  fill: "red", // Customize the color
+                  fill: "red", 
                   stroke: null, // No border
-                  desiredSize: new go.Size(15, 15), // Set the size of the icon
+                  desiredSize: new go.Size(15, 15), // size of the icon
                 }
               )
             )
@@ -257,18 +256,18 @@
               { alignment: go.Spot.Center }, // Center the panel on the link
               $(
                 go.Shape,
-                "Circle", // Replacing with Circle temporarily for debugging
+                "Circle",
                 {
-                  fill: "red", // Customize the color
+                  fill: "red", 
                   stroke: null, // No border
-                  desiredSize: new go.Size(15, 15), // Set the size of the icon
+                  desiredSize: new go.Size(15, 15), // size of the icon
                 }
               )
             )
           )
         );
 
-        // Sample data
+        // Data nodes
         var nodeDataArray = [
           { key: "Root", Name: "Dummy Root", isRoot: true },
           {
@@ -331,6 +330,7 @@
           { key: 30, isGroup: true },
           { key: 40, isGroup: true },
           { key: 50, isGroup: true },
+          { key: 60, isGroup: true },
           {
             key: 7,
             Name: "Estes Atriedes (Vazz)",
@@ -496,6 +496,35 @@
             Context:
               "Manion Butler, also known as the \"Baby Butlerian,\" is a key symbolic figure. He is the infant son of Serena Butler, tragically murdered by the thinking machines as an act of cruelty. His death becomes a rallying cry for humanity during the Butlerian Jihad, uniting people against the machines and solidifying the anti-AI ideology that defines the future Imperium. Manion’s martyrdom cements his role as a lasting symbol of human resistance and sacrifice.",
             Reference: "- Legends of Dune trilogy",
+          },
+          {
+            key: 26,
+            Name: "Wandra Harkonnen (Butler)",
+            Gender: "female",
+            House: "none",
+            Context:
+              "",
+            Reference: "- Legends of Dune trilogy",
+            group: 60
+          },
+          {
+            key: 27,
+            Name: "Roella Harkonnen",
+            Gender: "female",
+            House: "none",
+            Context:
+              "",
+            Reference: "- Legends of Dune trilogy",
+          },
+          {
+            key: 28,
+            Name: "Quentin Vigar (Butler)",
+            Gender: "male",
+            House: "none",
+            Context:
+              "",
+            Reference: "- Legends of Dune trilogy",
+            group: 60
           }
         ];
 
@@ -534,7 +563,12 @@
           { from: 23, to: 19 }, //Livia to Serena
           { from: 25, to: 21, category: "HorizontalRight"},
           { from: 22, to: 25 }, //Manion Sr. to Octa
-          { from: 23, to: 25 } //Livia to Octa
+          { from: 23, to: 25 }, //Livia to Octa
+          { from: 21, to: 26 }, //Xavier to Wandra
+          { from: 25, to: 26 }, //Octa to Wandra
+          { from: 21, to: 27 }, //Xavier to Roella
+          { from: 25, to: 27 }, //Octa to Roella
+          { from: 28, to: 26, category: "HorizontalRight"}
         ];
         myDiagram.groupTemplate = $(
           go.Group,
@@ -551,7 +585,7 @@
           $(go.Placeholder, { padding: 5 })
         );
         // Define the rainbow colors
-        var rainbowColors = ["blue", "red", "green"];
+        var rainbowColors = ["black", "gray"];
 
       // Assign colors to links in the link data
       for (var i = 0; i < linkDataArray.length; i++) {
