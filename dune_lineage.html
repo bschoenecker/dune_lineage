@@ -31,6 +31,27 @@
           }),
         });
 
+        // Event handler for node selection
+        myDiagram.addDiagramListener("ChangedSelection", function (e) {
+          // Reset all links to their default color
+          myDiagram.links.each(function (link) {
+            link.data.strokeWidth = 2; // Highlight stroke width
+            link.data.color = "black"; // Default color
+            myDiagram.model.updateTargetBindings(link.data);
+          });
+
+          // Highlight links connected to the selected node
+          var selectedNode = myDiagram.selection.first(); // Assumes single selection
+          if (selectedNode && selectedNode instanceof go.Node) {
+            selectedNode.findLinksConnected().each(function (link) {
+              link.data.strokeWidth = 3; // Highlight stroke width
+              link.data.color = "limegreen"; // Highlight color
+              link.layerName = "Foreground";
+              myDiagram.model.updateTargetBindings(link.data);
+            });
+          }
+        });
+
 
 
         // Function to determine the background color based on Gender
@@ -56,7 +77,7 @@
               "Auto",
               $(go.Shape, "RoundedRectangle", {
                 fill: null,
-                stroke: "#7986cb",
+                stroke: "limegreen",
                 strokeWidth: 3,
               }),
               $(go.Placeholder)
@@ -188,8 +209,15 @@
           $(
             go.Link,
             { routing: go.Link.Orthogonal, curve: go.Link.Bezier, corner: 25 },
-            $(go.Shape, { strokeWidth: 2 }, new go.Binding("stroke", "color")),
-            $(go.Shape, { toArrow: "Standard", stroke: null }, new go.Binding("fill", "color")),
+            $(go.Shape, 
+              { strokeWidth: 2 }, // Default stroke width
+              new go.Binding("stroke", "color"), // Bind color
+              new go.Binding("strokeWidth", "strokeWidth") // Bind strokeWidth
+            ),
+            $(go.Shape, 
+              { toArrow: "Standard", stroke: null }, 
+              new go.Binding("fill", "color")
+            ),
             new go.Binding("curviness", "curviness"),
             new go.Binding("opacity", "isRootLink", function (isRootLink) {
               return isRootLink ? 0 : 1; // Make root-related links fully transparent
@@ -490,7 +518,7 @@
           },
           {
             key: 24,
-            Name: "Manion Butler (Junior)",
+            Name: "Baby Manion (Junior)",
             Gender: "male",
             House: "none",
             Context:
@@ -524,6 +552,16 @@
             Context:
               "",
             Reference: "- Legends of Dune trilogy",
+            group: 60
+          },
+          {
+            key: 29,
+            Name: "Omilia Harkonnen",
+            Gender: "female",
+            House: "harkonnen",
+            Context:
+              "One of Xavier's three daughter with Octa, Omilia is a historical figure who contributed to the establishment and influence of House Harkonnen during its formative years in the Landsraad, the political assembly of noble houses. Details about her personality are sparse, but she is often associated with the early Harkonnen values of ambition and cunning, which set the tone for the house’s future trajectory. Omilia lived during the early days of House Harkonnen's rise, before it became one of the most infamous houses in the Imperium.",
+            Reference: "- Prelude to Dune trilogy",
             group: 60
           }
         ];
@@ -568,7 +606,9 @@
           { from: 25, to: 26 }, //Octa to Wandra
           { from: 21, to: 27 }, //Xavier to Roella
           { from: 25, to: 27 }, //Octa to Roella
-          { from: 28, to: 26, category: "HorizontalRight"}
+          { from: 28, to: 26, category: "HorizontalRight"},
+          { from: 21, to: 29 }, //Xavier to Omilia
+          { from: 25, to: 29 }, //Octa to Omilia
         ];
         myDiagram.groupTemplate = $(
           go.Group,
