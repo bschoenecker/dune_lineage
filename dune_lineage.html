@@ -359,6 +359,7 @@
           { key: 40, isGroup: true },
           { key: 50, isGroup: true },
           { key: 60, isGroup: true },
+          { key: 70, isGroup: true },
           {
             key: 7,
             Name: "Estes Atriedes (Vazz)",
@@ -579,7 +580,8 @@
             House: "none",
             Context:
               "",
-            Reference: "- Legends of Dune trilogy"
+            Reference: "- Legends of Dune trilogy",
+            group: 70
           },
           {
             key: 33,
@@ -589,6 +591,16 @@
             Context:
               "",
             Reference: "- Legends of Dune trilogy"
+          },
+          {
+            key: 34,
+            Name: "Kohe Tantor",
+            Gender: "female",
+            House: "none",
+            Context:
+              "",
+            Reference: "- Legends of Dune trilogy",
+            group: 70
           }
 
         ];
@@ -642,6 +654,7 @@
           { from: 28, to: 33 }, //Quentin to Abulurd
           { from: 26, to: 32 }, //Wandra to Rikov
           { from: 28, to: 32 }, //Quentin to Rikov
+          { from: 34, to: 32, category: "HorizontalRight"}, //Rikov to Kohe
         ];
         myDiagram.groupTemplate = $(
           go.Group,
