@@ -561,9 +561,36 @@
             House: "harkonnen",
             Context:
               "One of Xavier's three daughter with Octa, Omilia is a historical figure who contributed to the establishment and influence of House Harkonnen during its formative years in the Landsraad, the political assembly of noble houses. Details about her personality are sparse, but she is often associated with the early Harkonnen values of ambition and cunning, which set the tone for the house’s future trajectory. Omilia lived during the early days of House Harkonnen's rise, before it became one of the most infamous houses in the Imperium.",
-            Reference: "- Prelude to Dune trilogy",
-            group: 60
+            Reference: "- Prelude to Dune trilogy"
+          },
+          {
+            key: 31,
+            Name: "Faykan Butler (Corrino)",
+            Gender: "male",
+            House: "corrino",
+            Context:
+              "",
+            Reference: "- Legends of Dune trilogy"
+          },
+          {
+            key: 32,
+            Name: "Rikov Butler",
+            Gender: "male",
+            House: "none",
+            Context:
+              "",
+            Reference: "- Legends of Dune trilogy"
+          },
+          {
+            key: 33,
+            Name: "Abulurd Butler (Harkonnen)",
+            Gender: "male",
+            House: "harkonnen",
+            Context:
+              "",
+            Reference: "- Legends of Dune trilogy"
           }
+
         ];
 
         var linkDataArray = [
@@ -606,9 +633,15 @@
           { from: 25, to: 26 }, //Octa to Wandra
           { from: 21, to: 27 }, //Xavier to Roella
           { from: 25, to: 27 }, //Octa to Roella
-          { from: 28, to: 26, category: "HorizontalRight"},
+          { from: 28, to: 26, category: "HorizontalRight"}, //Quentin to Wandra
           { from: 21, to: 29 }, //Xavier to Omilia
           { from: 25, to: 29 }, //Octa to Omilia
+          { from: 26, to: 31 }, //Wandra to Faykan
+          { from: 28, to: 31 }, //Quentin to Faykan
+          { from: 26, to: 33 }, //Wandra to Abulurd
+          { from: 28, to: 33 }, //Quentin to Abulurd
+          { from: 26, to: 32 }, //Wandra to Rikov
+          { from: 28, to: 32 }, //Quentin to Rikov
         ];
         myDiagram.groupTemplate = $(
           go.Group,
