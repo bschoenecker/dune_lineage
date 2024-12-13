@@ -492,7 +492,7 @@
             Gender: "female",
             House: "none",
             Context:
-              "She was a charismatic leader of the Butlerian Jihad, the human revolt against the oppressive thinking machines. She was an early lover of Xavier Harkonnen and was captured by the machines during the defense of Zimia. Unbeknownst, she was pregnant with Xavier's son Manion. Serena became the personal study of the machine Erasmus and gave birth to Manion while in the machines custody. Manion became jealous of the time Serena was devoting to Manion and was murded by Erasmus. This spawned the fervor that instigated the Butlerian Jihad. Her personal tragedy—the death of her infant son at the hands of the machines—sparked widespread outrage and united humanity in the fight. Revered as a martyr and symbol of resistance, Serena's leadership and sacrifice help lay the foundation for the eventual rise of the Imperium and the anti-technology ethos of the Dune universe.",
+              "She was a charismatic leader of the Butlerian Jihad, the human revolt against the oppressive thinking machines. She was the early lover of Xavier Harkonnen and was captured by the machines during the defense of Zimia. Unbeknownst to her, she was pregnant at the time of her capture with Xavier's son Manion (junior). Serena became the personal study of the machine Erasmus and gave birth to baby Manion while in the machines custody. Erasmus became jealous of the time Serena was devoting to Manion and so was murdered by Erasmus in front of throngs of human slaves. This spawned the fervor that instigated the Butlerian Jihad. Her personal tragedy—the death of her infant son at the hands of the machines—sparked widespread outrage and united humanity in the fight. Revered as a martyr and symbol of resistance, Serena's leadership and sacrifice help lay the foundation for the eventual rise of the Imperium and the anti-technology ethos of the Dune universe.",
             Reference: "- Legends of Dune trilogy",
             group: 40
           },
@@ -601,6 +601,51 @@
               "",
             Reference: "- Legends of Dune trilogy",
             group: 70
+          },
+          {
+            key: 35,
+            Name: "Willem Atriedes",
+            Gender: "male",
+            House: "atriedes",
+            Context:
+              "Duke Willem Atreides was the founder of House Atreides and its first representitive in the Landsraad League. Following his great-great-great-grandfather Vorian's supposed death at the hands of Valya Harkonnen's schemes, Willem schemed to kill her brother Danvis Harkonnen in revenge. When in competition with Danvis for the role of Imperial Chamberlain all the other candidates appeared dead, Willem was blamed, and when Danvis appeared dead he was expelled from a new list of candidates. Meanwhile, his cousin Luc Atreides and his family visited from Kepler. After Danvis' apparant death, he was killed by the Harkonnen cousin Gerhard in an act of kanly.",
+            Reference: "- ?",
+          },
+          {
+            key: 36,
+            Name: "Shander Atriedes",
+            Gender: "male",
+            House: "atriedes",
+            Context:
+              "",
+            Reference: "- ?",
+          },
+          {
+            key: 37,
+            Name: "Orry Atriedes",
+            Gender: "male",
+            House: "atriedes",
+            Context:
+              "",
+            Reference: "- ?",
+          },
+          {
+            key: 38,
+            Name: "Miklos Atriedes",
+            Gender: "male",
+            House: "atriedes",
+            Context:
+              "",
+            Reference: "- ?",
+          },
+          {
+            key: 39,
+            Name: "Kean Atriedes",
+            Gender: "male",
+            House: "atriedes",
+            Context:
+              "",
+            Reference: "- ?",
           }
 
         ];
@@ -655,6 +700,11 @@
           { from: 26, to: 32 }, //Wandra to Rikov
           { from: 28, to: 32 }, //Quentin to Rikov
           { from: 34, to: 32, category: "HorizontalRight"}, //Rikov to Kohe
+          { from: 6, to: 35 }, //Vorian to Willem
+          { from: 6, to: 36 }, //Vorian to Shander
+          { from: 6, to: 37 }, //Vorian to Orry
+          { from: 35, to: 38 }, //Willem to Miklos
+          { from: 38, to: 39 }
         ];
         myDiagram.groupTemplate = $(
           go.Group,
