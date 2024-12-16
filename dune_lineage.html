@@ -224,6 +224,53 @@
             })
           )
         );
+        
+        // Add a special node template for the time period
+        myDiagram.nodeTemplateMap.add(
+          "TimePeriod",
+          $(
+            go.Node,
+            "Spot", // Use Spot panel to precisely position elements
+            {
+              locationSpot: go.Spot.Center,
+              selectionAdornmentTemplate: $(go.Adornment), // Disable selection highlight
+            },
+            // The triangular shape
+            $(
+              go.Shape,
+              "TriangleDown",
+              {
+                fill: "lightblue", // Background color of the triangle
+                stroke: "black",   // Border color
+                strokeWidth: 2,
+                desiredSize: new go.Size(100, 100), // Adjust the triangle size
+              }
+            ),
+            // Image in the center of the triangle
+            $(
+              go.Picture,
+              {
+                source: "/images/snake.png",
+                alignment: go.Spot.Center,
+                desiredSize: new go.Size(65, 65), // Adjust image size as needed
+              }
+            ),
+            // Text at the top inside the triangle
+            $(
+              go.TextBlock,
+              {
+                alignment: new go.Spot(0.5, 0.1), // Align text to the top-center of the triangle
+                margin: 5,
+                font: "bold 10px sans-serif",
+                stroke: "black",
+                textAlign: "center",
+              },
+              new go.Binding("text", "TimePeriod") // Bind text to the "TimePeriod" property
+            )
+          )
+        );
+
+
 
         // Horizontal Left link template
         myDiagram.linkTemplateMap.add(
@@ -298,6 +345,7 @@
         // Data nodes
         var nodeDataArray = [
           { key: "Root", Name: "Dummy Root", isRoot: true },
+          { key: "timePeriodBeneGesserit", category: "TimePeriod", TimePeriod: "2500 years"},
           {
             key: 1,
             Name: "Atreus",
@@ -704,7 +752,8 @@
           { from: 6, to: 36 }, //Vorian to Shander
           { from: 6, to: 37 }, //Vorian to Orry
           { from: 35, to: 38 }, //Willem to Miklos
-          { from: 38, to: 39 }
+          { from: 38, to: 39 },
+          { from: 15, to: "timePeriodBeneGesserit"}
         ];
         myDiagram.groupTemplate = $(
           go.Group,
