@@ -54,10 +54,10 @@
 
 
 
-        // Function to determine the background color based on Gender
-        function genderColorConverter(gender) {
-          if (gender === "male") return "#e6f7ff"; // very light blue
-          if (gender === "female") return "#ffe6ff"; // very light pink
+        // Function to determine the background color based on "Gender"
+        function GenderColorConverter(Gender) {
+          if (Gender === "male") return "#e6f7ff"; // very light blue
+          if (Gender === "female") return "#ffe6ff"; // very light pink
           return "white";
         }
 
@@ -96,7 +96,7 @@
               stroke: "black",
               strokeWidth: 2,
             },
-            new go.Binding("fill", "Gender", genderColorConverter)
+            new go.Binding("fill", "Gender", GenderColorConverter)
           ),
           // Vertical panel inside the shape
           $(
@@ -341,420 +341,7 @@
             )
           )
         );
-
-        // Data nodes
-        var nodeDataArray = [
-          { key: "Root", Name: "Dummy Root", isRoot: true },
-          { key: "timePeriodBeneGesserit", category: "TimePeriod", TimePeriod: "2500 years"},
-          {
-            key: 1,
-            Name: "Atreus",
-            Gender: "male",
-            House: "none",
-            Context:
-              "House Atreides gets its name from Atreus, a king in Greek mythology who was the father of Agamemnon and Menelaus. This connection is symbolic, linking the Atreides family to a long tradition of noble (and sometimes troubled) leadership. But as far as Dune is concerned, Atreus himself doesn’t show up, do anything, or even get mentioned much beyond the genealogical footnote.",
-            Reference: "- Legends of Dune Trilogy",
-          },
-          {
-            key: 2,
-            Name: "Agamemnon",
-            Gender: "male",
-            House: "none",
-            Context:
-              "Agamemnon started out as a human long before the Jihad. Along with a group of other ambitious elites, he transcended mortality by transferring his brain into a mechanical body, becoming a “cymek.” As a cymek, he was essentially a human brain controlling a powerful, engineered shell. Agamemnon and the other Titans conquered vast swathes of the old empire, ruling ruthlessly and paving the way for the artificial intelligence collective known as Omnius to rise to power. The Titans, once in control, gradually became overshadowed by their own creation—this omnipresent AI network—though they never quite gave up their personal ambitions.",
-            Reference: "- Legends of Dune Trilogy",
-          },
-          {
-            key: 6,
-            Name: "Vorian Atriedes",
-            Gender: "male",
-            House: "atriedes",
-            Context:
-              "Vorian Atreides was the son of Agamemnon, created from his genetic material. Vorian, born and raised among these machine rulers, initially serves as a liaison between Omnius (the evermind controlling the machines) and various human worlds. Unlike his father and the other Titans, he retains a strong sense of morality and empathy. Over time, he becomes deeply disillusioned by the cruelty of the machine empire. A turning point comes when Vorian encounters free humans fighting desperately to liberate themselves. He defects to the human side, bringing valuable knowledge that helps tip the scales in the Butlerian Jihad. Through acts of bravery, tactical brilliance, and personal sacrifice, he emerges as a heroic figure. His actions and principles—valor, honor, compassion—would go on to define the ethical backbone of House Atreides for millennia to come.",
-            group: 10,
-            Reference: "- Legends of Dune Trilogy",
-          },
-          {
-            key: 4,
-            Name: "Hyla",
-            Gender: "female",
-            House: "none",
-            Context:
-              "Hyla was the only daughter of the Titan general Agamemnon, born along with her brother Andros during the Titans' time on Richese. They were trained in great skills by their father, along with the other two remaining Titans, Juno and Dante, and given life-extension treatment and machine strength. In 108 BG, after the end of the Butlerian Jihad, Hyla and Andros were imprisoned in a preservation vault by the Titans. They were rescued by members of the Butlerian movement in 5 BG, long after the defeat of the Titans and the Omnius evermind, deciding to find their traitorous brother Vorian Atreides and potentially convert him back to the side of the thinking machines",
-            Reference: "- Legends of Dune Trilogy",
-          },
-          {
-            key: 5,
-            Name: "Andros",
-            Gender: "male",
-            House: "none",
-            Context:
-              "Andros was the fourteenth son of the Titan general Agamemnon, born along with his sister Hyla during the Titans' time on Richese. They were trained in great skills by their father, along with the other two remaining Titans, Juno and Dante, and given life-extension treatment and machine strength. In 108 BG, after the end of the Butlerian Jihad, Andros and Hyla were imprisoned in a preservation vault by the Titans. They were rescued by members of the Butlerian movement in 5 BG, long after the defeat of the Titans and the Omnius evermind, deciding to find their traitorous brother Vorian Atreides and potentially convert him back to the side of the thinking machines",
-            Reference: "- Legends of Dune Trilogy",
-          },
-          {
-            key: 9,
-            Name: "Leronica Tergiet",
-            Gender: "female",
-            House: "none",
-            Context:
-              "Leronica Tergiet is significant because she becomes the partner of Vorian Atreides during the Butlerian Jihad and mothers his children, thus helping to establish the human lineage that will evolve into the noble House Atreides. Her relationship with Vorian provides a grounding human connection that contrasts with his extraordinary lifespan, leaving a lasting legacy that influences the future Atreides line",
-            group: 10,
-            Reference: "- Legends of Dune Trilogy",
-          },
-          { key: 10, isGroup: true },
-          { key: 30, isGroup: true },
-          { key: 40, isGroup: true },
-          { key: 50, isGroup: true },
-          { key: 60, isGroup: true },
-          { key: 70, isGroup: true },
-          {
-            key: 7,
-            Name: "Estes Atriedes (Vazz)",
-            Gender: "male",
-            House: "atriedes",
-            Context:
-              "Estes Atreides was one of the twin sons of Vorian Atreides and Leronica Tergiet. Estes was taller and more flamboyant compared to his brother Kagin. He and his brother were grown by their foster father, Kalem Vazz on Caladan, until he was killed by elecrans when they were young. Vorian tried to return to Leronica and get to know the boys better but did not want to spoil their memories by revealing he was their true father, a fact the teen boys discovered by accident; they were shocked since they preferred the memories with Vazz. Vorian attempted to have good connections with his sons and took care for their proper schooling but they were still distant to him, although Leronica insisted on taking his name. The distance was bigger towards Estes with whom he had gotten into a quarrel over a minor sarcastic comment. The two brothers took a regular dose of melange which helped them retain youthful appearances in their sixties, although Vorian still looked like their grandson.",
-            Reference: "- Legends of Dune Trilogy",
-          },
-          {
-            key: 8,
-            Name: "Kagin Atriedes (Vazz)",
-            Gender: "male",
-            House: "atriedes",
-            Context:
-              "Kagin Atreides is one of the twin sons of Vorian Atreides and Leronica Tergiet. Kagin was quieter and shorter, introspective follower compared to his brother Estes. He and his brother were grown by their foster father, Kalem Vazz on Caladan, until he was killed by elecrans when they were young. Vorian tried to return to Leronica and meet the boys better but did not want to spoil their memories by revealing he was their true father, until Kagin discovered it himself by accident. The teen boys were shocked since they preferred the memories with Vazz. Vorian attempted his sons to have good connections, proper schooling but they were still distant to him, although Leronica insisted to take his name. The two brothers took a regular dose of melange which helped them retain youthful appearances in his sixties, although Vorian still looked like their grandson.",
-            Reference: "- Legends of Dune Trilogy",
-          },
-          {
-            key: 3,
-            Name: "Karida Julan",
-            Gender: "female",
-            House: "none",
-            Context:
-              "Karida Julan was a girl from Hagal whom Vorian Atreides had met during his missions for the Butlerian Jihad. When she told him she bore a daughter, Vorian had sent plenty of credits to support the child and her mother. Since finding Leronica Tergiet, though, he'd had no further contact with her.",
-            group: 10,
-            Reference: "- Legends of Dune Trilogy",
-          },
-          {
-            key: 11,
-            Name: "Helmina Berto-Anirul",
-            Gender: "female",
-            House: "none",
-            Context:
-              "Helmina Berto-Anirul was the illegitimate daughter of Vorian Atreides and Karida Julan. Late in her life, she had a daughter, Raquella Berto-Anirul. She died in a groundcar accident before Vorian could meet her.",
-            Reference: "- Legends of Dune Trilogy",
-          },
-          {
-            key: 12,
-            Name: "Raquella Berto-Anirul",
-            Gender: "female",
-            House: "benegesserit",
-            Context:
-              "Original founder of the Bene Gesserit. Vorian's granddaughter Raquella Berto-Anirul is significant because she takes the raw potential of a group of gifted sorcerer women on Rossak and molds them into the Bene Gesserit—one of the most influential and enduring sisterhoods in Dune’s universe. Her adaptability, survival skills, and visionary leadership set the stage for much of the intrigue and subtle power-brokering that define the Sisterhood in the centuries to come.",
-            Reference: "- Legends of Dune Trilogy \n - Schools of Dune Trilogy",
-            group: 20,
-          },
-          {
-            key: 13,
-            Name: "Arlett",
-            Gender: "female",
-            House: "benegesserit",
-            Context:
-              "Daughter from Raquella and Dr. Mohandas Suk. Arlett was compelled to stay with the school and became a graduate of the Sisterhood. She then became a traveller, stopping in at out-of-the-way places to discuss the Rossak school. This included a stop at Lankiveil where she recruited Valya Harkonnen. Arlett also refuses to be separated from Dorotea (her daughter), insisting that she would leave the Sisterhood and find Dorotea's father",
-            Reference: "- Legends of Dune Trilogy \n - Schools of Dune Trilogy",
-          },
-          {
-            key: 14,
-            Name: "Mohandes Suk",
-            Gender: "male",
-            House: "suk",
-            Context:
-              "Dr. Mohandas Suk was the grandnephew of the great Rajid Suk and the founder of the Suk Medical School. With his lover, Raquella Berto-Anirul (granddaughter of Vorian Atreides) they established the Hospital for Incurable Diseases on Parmentier, a former Synchronized World recolonized by the League of Nobles. Later, in 107 BG, Mohandas and Raquella founded the Humanities Medical Commission and went to more than thirty planets in their efforts to treat plague victims with the help of LS Recovery, a medical starship bought for them by Vorian. In 88 BG, they traveled to Rossak to help fight the Rossak Epidemic another outbreak of the Scourge. Mohandas remained on board the LS Recovery studying samples sent by Raquella and trying to find a vaccine. The two saw each other very rarely during that condition, due to the quarantine. After that situation was resolved, Mohandas saw Raquella for one last time and conceived a child with her. Raquella chose to stay on Rossak to lead the Sorceresses in a new Sisterhood. ",
-            Reference: "- Legends of Dune Trilogy \n - Schools of Dune Trilogy",
-            group: 20,
-          },
-          { key: 20, isGroup: true },
-          {
-            key: 15,
-            Name: "Doritea",
-            Gender: "female",
-            House: "benegesserit",
-            Context:
-              "Dorotea was the second Reverend Mother in history, the founder and leader of the schismatic Orthodox Sisterhood on Salusa Secundus, and Truthsayer to Padishah Emperor Salvador Corrino. When Dorotea goes through the agony she gains access to her Other Memory, and this is when she discovers she is the daughter of Arlett and the grand-daughter of Raquella. Dorotea had never known her mother, but could now see that Arlett was cast out of the Sisterhood after giving birth to her (this is where she became a travelling recruiter). Dorotea also became aware of Raquella's actions in switching the babies around (i.e. Arlett's daughter), but also, more importantly she had access to Other Memory when it came to the breeding records, and the thinking machines being used by the Sisterhood to do so.",
-            Reference: "- Schools of Dune Trilogy",
-          },
-          {
-            key: 17,
-            Name: "Ulf Harkonnen",
-            Gender: "male",
-            House: "harkonnen",
-            Context:
-              "Ulf Harkonnen was the father of Piers and Xavier Harkonnen, and the husband of Katarina Harkonnen. He was the holder of the family's mining business on Hagal and true to Harkonnen tradition, he was naive, cruel, gruff and defiant, to the dismay of his more humanistic son. On the family's way to Salusa Secundus he scorned his son for his humanistic views towards the slaves which would harm the business. When they entered Caladan system, their space yaught was attacked by six patrolling cymeks led by Agamemnon. Ulf bravely and defiantly responded to the attack, but the doomed ship was not fit for such circumstances. Piers was ejected in a lifepod but it was too late for his parents and both perished in the explosion.",
-            Reference: "- Prelude to Dune trilogy",
-            category: "MainSource",
-            group: 30,
-          },
-          {
-            key: 16,
-            Name: "Katarina du Bohan",
-            Gender: "female",
-            House: "none",
-            Context:
-              "She was a member of the noble House du Bohan before marrying into House Harkonnen. Her marriage helped strengthen the political power of House Harkonnen, as alliances through marriage were a common strategy among noble families in the Dune universe to consolidate influence and resources.",
-            Reference: "- Prelude to Dune trilogy",
-            group: 30,
-          },
-          {
-            key: 18,
-            Name: "Piers Harkonnen",
-            Gender: "male",
-            House: "harkonnen",
-            Context:
-              "Piers Harkonnen was the elder son of Ulf and Katarina Harkonnen and brother of Xavier Harkonnen. On his 21st year, his father put him in charge of the family's sheet diamond mines on Hagal. Piers however was against his family's cutthroat policy. He respected the slaves (called them 'workers') and insisted they deserved rights, and let them work without typical Harkonnen regulations and close oversight; something that would augment their productivity and benefit his own family. Ulf wasn't impressed when he discovered this and took him to Salusa Secundus. During the trip however, their family yaught was attacked by Agamemnon and other 6 cymek ships. When all hope was lost, Piers was secured in a lifepod but it was too late for his parents. The yaught was destroyed and Piers crashed on Caladan, however the cymeks continued to pursue him. Piers initially managed to lose his pursuers in the icy landscape when suddenly a Zensunni Caladan primitives' tribe, led by Tiddoc, saved his life. They had devised methods with combined attacks, to disable cymeks even with primitive tools. The next day, Agamemnon himself with 3 cymeks assaulted the village. Agamemnon grabbed Piers who tried to distract him, when they both fell in a gayser. Agamemnon's brain canister was ejected in space and Piers suffered serious bruises. Knowing that he would find no way back to the League words, Piers spent the rest of his life with the Zensunni, dying later that year. Since he was presumed dead ever since, the Harkonnen heritage passed to his younger brother.",
-            Reference: "- Prelude to Dune trilogy",
-          },
-          {
-            key: 25,
-            Name: "Octa Butler",
-            Gender: "female",
-            House: "none",
-            Context:
-              "",
-            Reference: "- Legends of Dune trilogy",
-            group: 40
-          },
-          {
-            key: 21,
-            Name: "Xavier Harkonnen",
-            Gender: "male",
-            House: "harkonnen",
-            Context:
-              "Xavier Harkonnen is a heroic military leader during the Butlerian Jihad, and the original lover of Serena Butler. He and Serena were to be married until she was captured by the machines and held by Erasmus. She was thought dead for years, and Xavier ended up marrying Serena's sister Octa. Unlike the infamous reputation of later Harkonnens, Xavier is noble, honorable, and self-sacrificing, playing a key role in humanity's fight against the thinking machines. His ultimate martyrdom underscores his dedication to the cause. Despite his valor, his house's legacy diverges drastically, becoming synonymous with cruelty and tyranny in later generations.",
-            Reference: "- Legends of Dune trilogy",
-            group: 40
-          },
-          {
-            key: 19,
-            Name: "Serena Butler",
-            Gender: "female",
-            House: "none",
-            Context:
-              "She was a charismatic leader of the Butlerian Jihad, the human revolt against the oppressive thinking machines. She was the early lover of Xavier Harkonnen and was captured by the machines during the defense of Zimia. Unbeknownst to her, she was pregnant at the time of her capture with Xavier's son Manion (junior). Serena became the personal study of the machine Erasmus and gave birth to baby Manion while in the machines custody. Erasmus became jealous of the time Serena was devoting to Manion and so was murdered by Erasmus in front of throngs of human slaves. This spawned the fervor that instigated the Butlerian Jihad. Her personal tragedy—the death of her infant son at the hands of the machines—sparked widespread outrage and united humanity in the fight. Revered as a martyr and symbol of resistance, Serena's leadership and sacrifice help lay the foundation for the eventual rise of the Imperium and the anti-technology ethos of the Dune universe.",
-            Reference: "- Legends of Dune trilogy",
-            group: 40
-          },
-          {
-            key: 23,
-            Name: "Manion Butler",
-            Gender: "male",
-            House: "none",
-            Context:
-              "",
-            Reference: "- Legends of Dune trilogy",
-            category: "MainSource",
-            group: 50
-          },
-          {
-            key: 22,
-            Name: "Livia Butler",
-            Gender: "female",
-            House: "none",
-            Context:
-              "",
-            Reference: "- Legends of Dune trilogy",
-            group: 50
-          },
-          {
-            key: 24,
-            Name: "Baby Manion (Junior)",
-            Gender: "male",
-            House: "none",
-            Context:
-              "Manion Butler, also known as the \"Baby Butlerian,\" is a key symbolic figure. He is the infant son of Serena Butler, tragically murdered by the thinking machines as an act of cruelty. His death becomes a rallying cry for humanity during the Butlerian Jihad, uniting people against the machines and solidifying the anti-AI ideology that defines the future Imperium. Manion’s martyrdom cements his role as a lasting symbol of human resistance and sacrifice.",
-            Reference: "- Legends of Dune trilogy",
-          },
-          {
-            key: 26,
-            Name: "Wandra Harkonnen (Butler)",
-            Gender: "female",
-            House: "none",
-            Context:
-              "",
-            Reference: "- Legends of Dune trilogy",
-            group: 60
-          },
-          {
-            key: 27,
-            Name: "Roella Harkonnen",
-            Gender: "female",
-            House: "none",
-            Context:
-              "",
-            Reference: "- Legends of Dune trilogy",
-          },
-          {
-            key: 28,
-            Name: "Quentin Vigar (Butler)",
-            Gender: "male",
-            House: "none",
-            Context:
-              "",
-            Reference: "- Legends of Dune trilogy",
-            group: 60
-          },
-          {
-            key: 29,
-            Name: "Omilia Harkonnen",
-            Gender: "female",
-            House: "harkonnen",
-            Context:
-              "One of Xavier's three daughter with Octa, Omilia is a historical figure who contributed to the establishment and influence of House Harkonnen during its formative years in the Landsraad, the political assembly of noble houses. Details about her personality are sparse, but she is often associated with the early Harkonnen values of ambition and cunning, which set the tone for the house’s future trajectory. Omilia lived during the early days of House Harkonnen's rise, before it became one of the most infamous houses in the Imperium.",
-            Reference: "- Prelude to Dune trilogy"
-          },
-          {
-            key: 31,
-            Name: "Faykan Butler (Corrino)",
-            Gender: "male",
-            House: "corrino",
-            Context:
-              "",
-            Reference: "- Legends of Dune trilogy"
-          },
-          {
-            key: 32,
-            Name: "Rikov Butler",
-            Gender: "male",
-            House: "none",
-            Context:
-              "",
-            Reference: "- Legends of Dune trilogy",
-            group: 70
-          },
-          {
-            key: 33,
-            Name: "Abulurd Butler (Harkonnen)",
-            Gender: "male",
-            House: "harkonnen",
-            Context:
-              "",
-            Reference: "- Legends of Dune trilogy"
-          },
-          {
-            key: 34,
-            Name: "Kohe Tantor",
-            Gender: "female",
-            House: "none",
-            Context:
-              "",
-            Reference: "- Legends of Dune trilogy",
-            group: 70
-          },
-          {
-            key: 35,
-            Name: "Willem Atriedes",
-            Gender: "male",
-            House: "atriedes",
-            Context:
-              "Duke Willem Atreides was the founder of House Atreides and its first representitive in the Landsraad League. Following his great-great-great-grandfather Vorian's supposed death at the hands of Valya Harkonnen's schemes, Willem schemed to kill her brother Danvis Harkonnen in revenge. When in competition with Danvis for the role of Imperial Chamberlain all the other candidates appeared dead, Willem was blamed, and when Danvis appeared dead he was expelled from a new list of candidates. Meanwhile, his cousin Luc Atreides and his family visited from Kepler. After Danvis' apparant death, he was killed by the Harkonnen cousin Gerhard in an act of kanly.",
-            Reference: "- ?",
-          },
-          {
-            key: 36,
-            Name: "Shander Atriedes",
-            Gender: "male",
-            House: "atriedes",
-            Context:
-              "",
-            Reference: "- ?",
-          },
-          {
-            key: 37,
-            Name: "Orry Atriedes",
-            Gender: "male",
-            House: "atriedes",
-            Context:
-              "",
-            Reference: "- ?",
-          },
-          {
-            key: 38,
-            Name: "Miklos Atriedes",
-            Gender: "male",
-            House: "atriedes",
-            Context:
-              "",
-            Reference: "- ?",
-          },
-          {
-            key: 39,
-            Name: "Kean Atriedes",
-            Gender: "male",
-            House: "atriedes",
-            Context:
-              "",
-            Reference: "- ?",
-          }
-
-        ];
-
-        var linkDataArray = [
-          // Parent-child links directly from each parent to the child
-          { from: "Root", to: 1, isRootLink: true },
-          { from: "Root", to: 16, isRootLink: true },
-          { from: "Root", to: 23, isRootLink: true },
-          { from: 1, to: 2 }, // Atreus to Agamemnon
-          { from: 2, to: 6 }, // Agamemnon to Vorian
-          { from: 2, to: 4 }, // Agamemnon to Hyla
-          { from: 2, to: 5 }, // Agamemnon to Andros
-          { from: 6, to: 3, category: "HorizontalRight" }, //Vorian to Karida
-          { from: 6, to: 7 }, // Leronic to Estes
-          { from: 9, to: 7 }, //Vorian to Estes
-          { from: 6, to: 8 }, // Leronic to Kagin
-          { from: 9, to: 8 }, //Vorian to Kagin
-          { from: 6, to: 9, category: "HorizontalLeft" }, // Vorian to Leronica
-          { from: 6, to: 11 }, //Vorian to Helmina
-          { from: 3, to: 11 }, //Karida to Helmina
-          { from: 11, to: 12 }, //Helmina to Raquella
-          { from: 12, to: 13 }, //Raquella to Arlett
-          { from: 14, to: 12, category: "HorizontalRight" }, //Mohandas Suk to Raquella
-          { from: 14, to: 13 }, //Mohandes SUk to Arlett
-          { from: 13, to: 15 }, //Arlett to Doritea
-          { from: 17, to: 16, category: "HorizontalRight" },//Ulf Harkonnen to Katarina du Bohan
-          { from: 17, to: 18 }, //Ulf to Piers
-          { from: 16, to: 18 }, //Katarina to Piers
-          { from: 17, to: 21 }, //Ulf to Xavier
-          { from: 16, to: 21 }, //Katarina to Xavier
-          { from: 21, to: 19, category: "HorizontalRight"}, //Xavier to Serena
-          { from: 23, to: 22, category: "HorizontalRight"},
-          { from: 21, to: 24 }, //Xavier to Manion Jr.
-          { from: 19, to: 24 }, //Serena to Manion Jr.
-          { from: 22, to: 19 }, //Manion Sr. to Serena
-          { from: 23, to: 19 }, //Livia to Serena
-          { from: 25, to: 21, category: "HorizontalRight"},
-          { from: 22, to: 25 }, //Manion Sr. to Octa
-          { from: 23, to: 25 }, //Livia to Octa
-          { from: 21, to: 26 }, //Xavier to Wandra
-          { from: 25, to: 26 }, //Octa to Wandra
-          { from: 21, to: 27 }, //Xavier to Roella
-          { from: 25, to: 27 }, //Octa to Roella
-          { from: 28, to: 26, category: "HorizontalRight"}, //Quentin to Wandra
-          { from: 21, to: 29 }, //Xavier to Omilia
-          { from: 25, to: 29 }, //Octa to Omilia
-          { from: 26, to: 31 }, //Wandra to Faykan
-          { from: 28, to: 31 }, //Quentin to Faykan
-          { from: 26, to: 33 }, //Wandra to Abulurd
-          { from: 28, to: 33 }, //Quentin to Abulurd
-          { from: 26, to: 32 }, //Wandra to Rikov
-          { from: 28, to: 32 }, //Quentin to Rikov
-          { from: 34, to: 32, category: "HorizontalRight"}, //Rikov to Kohe
-          { from: 6, to: 35 }, //Vorian to Willem
-          { from: 6, to: 36 }, //Vorian to Shander
-          { from: 6, to: 37 }, //Vorian to Orry
-          { from: 35, to: 38 }, //Willem to Miklos
-          { from: 38, to: 39 },
-          { from: 15, to: "timePeriodBeneGesserit"}
-        ];
+        
         myDiagram.groupTemplate = $(
           go.Group,
           "Auto",
@@ -766,19 +353,32 @@
             }),
           },
           // If you do want to maintain the group but just not show any text:
-          //$(go.Shape, { fill: null, stroke: "gray", strokeWidth: 2 }),
+          //$(go.Shape, { fill: null, stroke: "gray", strokeWidth: 2 })dd,
           $(go.Placeholder, { padding: 5 })
         );
-        // Define the rainbow colors
-        var rainbowColors = ["black", "gray"];
 
-      // Assign colors to links in the link data
-      for (var i = 0; i < linkDataArray.length; i++) {
-        linkDataArray[i].color = rainbowColors[i % rainbowColors.length];
+
+
+        // Fetch data import from data.json
+        // Load data from `data.json`
+        fetch("data.json")
+          .then((response) => {
+            if (!response.ok) {
+              throw new Error("Network response was not ok");
+            }
+            return response.json();
+          })
+          .then((data) => {
+            console.log("Data loaded:", data); // Debugging
+            myDiagram.model = new go.GraphLinksModel(
+              data.nodeDataArray,
+              data.linkDataArray
+            );
+          })
+          .catch((error) => console.error("Error loading data:", error));
       }
-        // Create the Model
-        myDiagram.model = new go.GraphLinksModel(nodeDataArray, linkDataArray);
-      }
+
+      
       window.addEventListener("DOMContentLoaded", init);
     </script>
   </head>
