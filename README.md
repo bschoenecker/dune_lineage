@@ -8,4 +8,6 @@ Features:
 - Conception relationships
 - Relationships that highlight and are easily visible when a character is selected
 
+This diagram is being devloped using GoJS, a powerful Javascript-based platform for creating interactive diagrams. You can find more information about it here: https://gojs.net/latest/index.html
+
 <img width="800" alt="Screenshot 2024-12-16 at 2 21 09 PM" src="https://github.com/user-attachments/assets/c2cda7ef-b330-4061-8574-ae841edb03f2" />
