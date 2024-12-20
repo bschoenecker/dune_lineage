@@ -39,7 +39,7 @@
                     "isGroup": true
                 },
                 {
-                    "key": 1,
+                    "key": "atreus",
                     "Name": "Atreus",
                     "Gender": "male",
                     "House": "none",
@@ -47,7 +47,7 @@
                     "Reference": "- Legends of Dune Trilogy"
                 },
                 {
-                    "key": 2,
+                    "key": "agamemnon",
                     "Name": "Agamemnon",
                     "Gender": "male",
                     "House": "none",
@@ -55,32 +55,7 @@
                     "Reference": "- Legends of Dune Trilogy"
                 },
                 {
-                    "key": 6,
-                    "Name": "Vorian Atriedes",
-                    "Gender": "male",
-                    "House": "atriedes",
-                    "Context": "Vorian Atreides was the son of Agamemnon, created from his genetic material. Vorian, born and raised among these machine rulers, initially serves as a liaison between Omnius (the evermind controlling the machines) and various human worlds. Unlike his father and the other Titans, he retains a strong sense of morality and empathy. Over time, he becomes deeply disillusioned by the cruelty of the machine empire. A turning point comes when Vorian encounters free humans fighting desperately to liberate themselves. He defects to the human side, bringing valuable knowledge that helps tip the scales in the Butlerian Jihad. Through acts of bravery, tactical brilliance, and personal sacrifice, he emerges as a heroic figure. His actions and principles—valor, honor, compassion—would go on to define the ethical backbone of House Atreides for millennia to come.",
-                    "group": 10,
-                    "Reference": "- Legends of Dune Trilogy"
-                },
-                {
-                    "key": 4,
-                    "Name": "Hyla",
-                    "Gender": "female",
-                    "House": "none",
-                    "Context": "Hyla was the only daughter of the Titan general Agamemnon, born along with her brother Andros during the Titans' time on Richese. They were trained in great skills by their father, along with the other two remaining Titans, Juno and Dante, and given life-extension treatment and machine strength. In 108 BG, after the end of the Butlerian Jihad, Hyla and Andros were imprisoned in a preservation vault by the Titans. They were rescued by members of the Butlerian movement in 5 BG, long after the defeat of the Titans and the Omnius evermind, deciding to find their traitorous brother Vorian Atreides and potentially convert him back to the side of the thinking machines",
-                    "Reference": "- Legends of Dune Trilogy"
-                },
-                {
-                    "key": 5,
-                    "Name": "Andros",
-                    "Gender": "male",
-                    "House": "none",
-                    "Context": "Andros was the fourteenth son of the Titan general Agamemnon, born along with his sister Hyla during the Titans' time on Richese. They were trained in great skills by their father, along with the other two remaining Titans, Juno and Dante, and given life-extension treatment and machine strength. In 108 BG, after the end of the Butlerian Jihad, Andros and Hyla were imprisoned in a preservation vault by the Titans. They were rescued by members of the Butlerian movement in 5 BG, long after the defeat of the Titans and the Omnius evermind, deciding to find their traitorous brother Vorian Atreides and potentially convert him back to the side of the thinking machines",
-                    "Reference": "- Legends of Dune Trilogy"
-                },
-                {
-                    "key": 9,
+                    "key": "leronica",
                     "Name": "Leronica Tergiet",
                     "Gender": "female",
                     "House": "none",
@@ -89,7 +64,33 @@
                     "Reference": "- Legends of Dune Trilogy"
                 },
                 {
-                    "key": 7,
+                    "key": "vorian",
+                    "Name": "Vorian Atriedes",
+                    "Gender": "male",
+                    "House": "atriedes",
+                    "Context": "Vorian Atreides was the son of Agamemnon, created from his genetic material. Vorian, born and raised among these machine rulers, initially serves as a liaison between Omnius (the evermind controlling the machines) and various human worlds. Unlike his father and the other Titans, he retains a strong sense of morality and empathy. Over time, he becomes deeply disillusioned by the cruelty of the machine empire. A turning point comes when Vorian encounters free humans fighting desperately to liberate themselves. He defects to the human side, bringing valuable knowledge that helps tip the scales in the Butlerian Jihad. Through acts of bravery, tactical brilliance, and personal sacrifice, he emerges as a heroic figure. His actions and principles—valor, honor, compassion—would go on to define the ethical backbone of House Atreides for millennia to come.",
+                    "group": 10,
+                    "Reference": "- Legends of Dune Trilogy"
+                },
+                {
+                    "key": "hyla",
+                    "Name": "Hyla",
+                    "Gender": "female",
+                    "House": "none",
+                    "Context": "Hyla was the only daughter of the Titan general Agamemnon, born along with her brother Andros during the Titans' time on Richese. They were trained in great skills by their father, along with the other two remaining Titans, Juno and Dante, and given life-extension treatment and machine strength. In 108 BG, after the end of the Butlerian Jihad, Hyla and Andros were imprisoned in a preservation vault by the Titans. They were rescued by members of the Butlerian movement in 5 BG, long after the defeat of the Titans and the Omnius evermind, deciding to find their traitorous brother Vorian Atreides and potentially convert him back to the side of the thinking machines",
+                    "Reference": "- Legends of Dune Trilogy"
+                },
+                {
+                    "key": "andros",
+                    "Name": "Andros",
+                    "Gender": "male",
+                    "House": "none",
+                    "Context": "Andros was the fourteenth son of the Titan general Agamemnon, born along with his sister Hyla during the Titans' time on Richese. They were trained in great skills by their father, along with the other two remaining Titans, Juno and Dante, and given life-extension treatment and machine strength. In 108 BG, after the end of the Butlerian Jihad, Andros and Hyla were imprisoned in a preservation vault by the Titans. They were rescued by members of the Butlerian movement in 5 BG, long after the defeat of the Titans and the Omnius evermind, deciding to find their traitorous brother Vorian Atreides and potentially convert him back to the side of the thinking machines",
+                    "Reference": "- Legends of Dune Trilogy"
+                },
+
+                {
+                    "key": "estes",
                     "Name": "Estes Atriedes (Vazz)",
                     "Gender": "male",
                     "House": "atriedes",
@@ -97,7 +98,7 @@
                     "Reference": "- Legends of Dune Trilogy"
                 },
                 {
-                    "key": 8,
+                    "key": "kagin",
                     "Name": "Kagin Atriedes (Vazz)",
                     "Gender": "male",
                     "House": "atriedes",
@@ -105,7 +106,7 @@
                     "Reference": "- Legends of Dune Trilogy"
                 },
                 {
-                    "key": 3,
+                    "key": "karida",
                     "Name": "Karida Julan",
                     "Gender": "female",
                     "House": "none",
@@ -114,7 +115,7 @@
                     "Reference": "- Legends of Dune Trilogy"
                 },
                 {
-                    "key": 11,
+                    "key": "helmina",
                     "Name": "Helmina Berto-Anirul",
                     "Gender": "female",
                     "House": "none",
@@ -122,7 +123,7 @@
                     "Reference": "- Legends of Dune Trilogy"
                 },
                 {
-                    "key": 12,
+                    "key": "raquella",
                     "Name": "Raquella Berto-Anirul",
                     "Gender": "female",
                     "House": "benegesserit",
@@ -131,7 +132,7 @@
                     "group": 20
                 },
                 {
-                    "key": 13,
+                    "key": "arlett",
                     "Name": "Arlett",
                     "Gender": "female",
                     "House": "benegesserit",
@@ -139,7 +140,7 @@
                     "Reference": "- Legends of Dune Trilogy \n - Schools of Dune Trilogy"
                 },
                 {
-                    "key": 14,
+                    "key": "mohandes",
                     "Name": "Mohandes Suk",
                     "Gender": "male",
                     "House": "suk",
@@ -148,7 +149,7 @@
                     "group": 20
                 },
                 {
-                    "key": 15,
+                    "key": "doritea",
                     "Name": "Doritea",
                     "Gender": "female",
                     "House": "benegesserit",
@@ -156,7 +157,7 @@
                     "Reference": "- Schools of Dune Trilogy"
                 },
                 {
-                    "key": 17,
+                    "key": "ulf",
                     "Name": "Ulf Harkonnen",
                     "Gender": "male",
                     "House": "harkonnen",
@@ -166,7 +167,7 @@
                     "group": 30
                 },
                 {
-                    "key": 16,
+                    "key": "katarina",
                     "Name": "Katarina du Bohan",
                     "Gender": "female",
                     "House": "none",
@@ -175,7 +176,7 @@
                     "group": 30
                 },
                 {
-                    "key": 18,
+                    "key": "piers",
                     "Name": "Piers Harkonnen",
                     "Gender": "male",
                     "House": "harkonnen",
@@ -183,7 +184,7 @@
                     "Reference": "- Prelude to Dune trilogy"
                 },
                 {
-                    "key": 25,
+                    "key": "octa",
                     "Name": "Octa Butler",
                     "Gender": "female",
                     "House": "none",
@@ -192,7 +193,7 @@
                     "group": 40
                 },
                 {
-                    "key": 21,
+                    "key": "xavier",
                     "Name": "Xavier Harkonnen",
                     "Gender": "male",
                     "House": "harkonnen",
@@ -201,7 +202,7 @@
                     "group": 40
                 },
                 {
-                    "key": 19,
+                    "key": "serena",
                     "Name": "Serena Butler",
                     "Gender": "female",
                     "House": "none",
@@ -210,7 +211,7 @@
                     "group": 40
                 },
                 {
-                    "key": 23,
+                    "key": "manion",
                     "Name": "Manion Butler",
                     "Gender": "male",
                     "House": "none",
@@ -220,7 +221,7 @@
                     "group": 50
                 },
                 {
-                    "key": 22,
+                    "key": "livia",
                     "Name": "Livia Butler",
                     "Gender": "female",
                     "House": "none",
@@ -229,7 +230,7 @@
                     "group": 50
                 },
                 {
-                    "key": 24,
+                    "key": "babymanion",
                     "Name": "Baby Manion (Junior)",
                     "Gender": "male",
                     "House": "none",
@@ -237,7 +238,7 @@
                     "Reference": "- Legends of Dune trilogy"
                 },
                 {
-                    "key": 26,
+                    "key": "wandra",
                     "Name": "Wandra Harkonnen (Butler)",
                     "Gender": "female",
                     "House": "none",
@@ -246,7 +247,7 @@
                     "group": 60
                 },
                 {
-                    "key": 27,
+                    "key": "roella",
                     "Name": "Roella Harkonnen",
                     "Gender": "female",
                     "House": "none",
@@ -254,7 +255,7 @@
                     "Reference": "- Legends of Dune trilogy"
                 },
                 {
-                    "key": 28,
+                    "key": "quentin",
                     "Name": "Quentin Vigar (Butler)",
                     "Gender": "male",
                     "House": "none",
@@ -263,7 +264,7 @@
                     "group": 60
                 },
                 {
-                    "key": 29,
+                    "key": "omilia",
                     "Name": "Omilia Harkonnen",
                     "Gender": "female",
                     "House": "harkonnen",
@@ -271,7 +272,7 @@
                     "Reference": "- Prelude to Dune trilogy"
                 },
                 {
-                    "key": 31,
+                    "key": "faykan",
                     "Name": "Faykan Butler (Corrino)",
                     "Gender": "male",
                     "House": "corrino",
@@ -279,7 +280,7 @@
                     "Reference": "- Legends of Dune trilogy"
                 },
                 {
-                    "key": 32,
+                    "key": "rikov",
                     "Name": "Rikov Butler",
                     "Gender": "male",
                     "House": "none",
@@ -288,7 +289,7 @@
                     "group": 70
                 },
                 {
-                    "key": 33,
+                    "key": "abulurd",
                     "Name": "Abulurd Butler (Harkonnen)",
                     "Gender": "male",
                     "House": "harkonnen",
@@ -296,7 +297,7 @@
                     "Reference": "- Legends of Dune trilogy"
                 },
                 {
-                    "key": 34,
+                    "key": "kohe",
                     "Name": "Kohe Tantor",
                     "Gender": "female",
                     "House": "none",
@@ -305,7 +306,7 @@
                     "group": 70
                 },
                 {
-                    "key": 35,
+                    "key": "willem",
                     "Name": "Willem Atriedes",
                     "Gender": "male",
                     "House": "atriedes",
@@ -313,7 +314,7 @@
                     "Reference": "- ?"
                 },
                 {
-                    "key": 36,
+                    "key": "shander",
                     "Name": "Shander Atriedes",
                     "Gender": "male",
                     "House": "atriedes",
@@ -321,7 +322,7 @@
                     "Reference": "- ?"
                 },
                 {
-                    "key": 37,
+                    "key": "orry",
                     "Name": "Orry Atriedes",
                     "Gender": "male",
                     "House": "atriedes",
@@ -329,7 +330,7 @@
                     "Reference": "- ?"
                 },
                 {
-                    "key": 38,
+                    "key": "miklos",
                     "Name": "Miklos Atriedes",
                     "Gender": "male",
                     "House": "atriedes",
@@ -337,7 +338,7 @@
                     "Reference": "- ?"
                 },
                 {
-                    "key": 39,
+                    "key": "kean",
                     "Name": "Kean Atriedes",
                     "Gender": "male",
                     "House": "atriedes",
@@ -348,230 +349,230 @@
             "linkDataArray": [
                 {
                     "from": "Root",
-                    "to": 1,
+                    "to": "atreus",
                     "isRootLink": true
                 },
                 {
                     "from": "Root",
-                    "to": 16,
+                    "to": "katarina",
                     "isRootLink": true
                 },
                 {
                     "from": "Root",
-                    "to": 23,
+                    "to": "manion",
                     "isRootLink": true
                 },
                 {
-                    "from": 1,
-                    "to": 2
+                    "from": "atreus",
+                    "to": "agamemnon"
                 },
                 {
-                    "from": 2,
-                    "to": 6
+                    "from": "agamemnon",
+                    "to": "vorian"
                 },
                 {
-                    "from": 2,
-                    "to": 4
+                    "from": "agamemnon",
+                    "to": "hyla"
                 },
                 {
-                    "from": 2,
-                    "to": 5
+                    "from": "agamemnon",
+                    "to": "andros"
                 },
                 {
-                    "from": 6,
-                    "to": 3,
-                    "category": "HorizontalRight"
-                },
-                {
-                    "from": 6,
-                    "to": 7
-                },
-                {
-                    "from": 9,
-                    "to": 7
-                },
-                {
-                    "from": 6,
-                    "to": 8
-                },
-                {
-                    "from": 9,
-                    "to": 8
-                },
-                {
-                    "from": 6,
-                    "to": 9,
+                    "from": "vorian",
+                    "to": "karida",
                     "category": "HorizontalLeft"
                 },
                 {
-                    "from": 6,
-                    "to": 11
+                    "from": "vorian",
+                    "to": "estes"
                 },
                 {
-                    "from": 3,
-                    "to": 11
+                    "from": 9,
+                    "to": "estes"
                 },
                 {
-                    "from": 11,
-                    "to": 12
+                    "from": "vorian",
+                    "to": "kagin"
                 },
                 {
-                    "from": 12,
-                    "to": 13
+                    "from": "leronica",
+                    "to": "kagin"
                 },
                 {
-                    "from": 14,
-                    "to": 12,
+                    "from": "vorian",
+                    "to": "leronica",
                     "category": "HorizontalRight"
                 },
                 {
-                    "from": 14,
-                    "to": 13
+                    "from": "vorian",
+                    "to": "helmina"
                 },
                 {
-                    "from": 13,
-                    "to": 15
+                    "from": "karida",
+                    "to": "helmina"
                 },
                 {
-                    "from": 17,
-                    "to": 16,
+                    "from": "helmina",
+                    "to": "raquella"
+                },
+                {
+                    "from": "raquella",
+                    "to": "arlett"
+                },
+                {
+                    "from": "mohandes",
+                    "to": "raquella",
                     "category": "HorizontalRight"
                 },
                 {
-                    "from": 17,
-                    "to": 18
+                    "from": "mohandes",
+                    "to": "arlett"
                 },
                 {
-                    "from": 16,
-                    "to": 18
+                    "from": "arlett",
+                    "to": "doritea"
                 },
                 {
-                    "from": 17,
-                    "to": 21
+                    "from": "ulf",
+                    "to": "katarina",
+                    "category": "HorizontalLeft"
                 },
                 {
-                    "from": 16,
-                    "to": 21
+                    "from": "ulf",
+                    "to": "piers"
                 },
                 {
-                    "from": 21,
-                    "to": 19,
+                    "from": "katarina",
+                    "to": "piers"
+                },
+                {
+                    "from": "ulf",
+                    "to": "xavier"
+                },
+                {
+                    "from": "katarina",
+                    "to": "xavier"
+                },
+                {
+                    "from": "xavier",
+                    "to": "serena",
+                    "category": "HorizontalLeft"
+                },
+                {
+                    "from": "manion",
+                    "to": "livia",
+                    "category": "HorizontalLeft"
+                },
+                {
+                    "from": "xavier",
+                    "to": "babymanion"
+                },
+                {
+                    "from": "serena",
+                    "to": "babymanion"
+                },
+                {
+                    "from": "livia",
+                    "to": "serena"
+                },
+                {
+                    "from": "manion",
+                    "to": "serena"
+                },
+                {
+                    "from": "octa",
+                    "to": "xavier",
+                    "category": "HorizontalLeft"
+                },
+                {
+                    "from": "livia",
+                    "to": "octa"
+                },
+                {
+                    "from": "manion",
+                    "to": "octa"
+                },
+                {
+                    "from": "xavier",
+                    "to": "wandra"
+                },
+                {
+                    "from": "octa",
+                    "to": "wandra"
+                },
+                {
+                    "from": "xavier",
+                    "to": "roella"
+                },
+                {
+                    "from": "octa",
+                    "to": "roella"
+                },
+                {
+                    "from": "quentin",
+                    "to": "wandra",
                     "category": "HorizontalRight"
                 },
                 {
-                    "from": 23,
-                    "to": 22,
+                    "from": "xavier",
+                    "to": "omilia"
+                },
+                {
+                    "from": "octa",
+                    "to": "omilia"
+                },
+                {
+                    "from": "wandra",
+                    "to": "faykan"
+                },
+                {
+                    "from": "quentin",
+                    "to": "faykan"
+                },
+                {
+                    "from": "wandra",
+                    "to": "abulurd"
+                },
+                {
+                    "from": "quentin",
+                    "to": "abulurd"
+                },
+                {
+                    "from": "wandra",
+                    "to": "rikov"
+                },
+                {
+                    "from": "quentin",
+                    "to": "rikov"
+                },
+                {
+                    "from": "kohe",
+                    "to": "rikov",
                     "category": "HorizontalRight"
                 },
                 {
-                    "from": 21,
-                    "to": 24
+                    "from": "vorian",
+                    "to": "willem"
                 },
                 {
-                    "from": 19,
-                    "to": 24
+                    "from": "vorian",
+                    "to": "shander"
                 },
                 {
-                    "from": 22,
-                    "to": 19
+                    "from": "vorian",
+                    "to": "orry"
                 },
                 {
-                    "from": 23,
-                    "to": 19
+                    "from": "willem",
+                    "to": "miklos"
                 },
                 {
-                    "from": 25,
-                    "to": 21,
-                    "category": "HorizontalRight"
+                    "from": "miklos",
+                    "to": "kean"
                 },
                 {
-                    "from": 22,
-                    "to": 25
-                },
-                {
-                    "from": 23,
-                    "to": 25
-                },
-                {
-                    "from": 21,
-                    "to": 26
-                },
-                {
-                    "from": 25,
-                    "to": 26
-                },
-                {
-                    "from": 21,
-                    "to": 27
-                },
-                {
-                    "from": 25,
-                    "to": 27
-                },
-                {
-                    "from": 28,
-                    "to": 26,
-                    "category": "HorizontalRight"
-                },
-                {
-                    "from": 21,
-                    "to": 29
-                },
-                {
-                    "from": 25,
-                    "to": 29
-                },
-                {
-                    "from": 26,
-                    "to": 31
-                },
-                {
-                    "from": 28,
-                    "to": 31
-                },
-                {
-                    "from": 26,
-                    "to": 33
-                },
-                {
-                    "from": 28,
-                    "to": 33
-                },
-                {
-                    "from": 26,
-                    "to": 32
-                },
-                {
-                    "from": 28,
-                    "to": 32
-                },
-                {
-                    "from": 34,
-                    "to": 32,
-                    "category": "HorizontalRight"
-                },
-                {
-                    "from": 6,
-                    "to": 35
-                },
-                {
-                    "from": 6,
-                    "to": 36
-                },
-                {
-                    "from": 6,
-                    "to": 37
-                },
-                {
-                    "from": 35,
-                    "to": 38
-                },
-                {
-                    "from": 38,
-                    "to": 39
-                },
-                {
-                    "from": 15,
+                    "from": "doritea",
                     "to": "timePeriodBeneGesserit"
                 }
             ]
