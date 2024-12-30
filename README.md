@@ -1,3 +1,5 @@
+**Work in Progress**
+
 After reading Frank's Dune books twice and starting on the full 23 book canon, I realized how rich the 10,000+ year history of the Dune expanded universe is. I wanted to find a good tool where I could explore that history and those relationships. I found some flowcharts and diagrams, but I wanted to create something a little more interactive. This diagram in GoJS attempts to create an easily browsable lineage tree of the major characters within the Dune universe.
 
 Features:
