@@ -31,26 +31,33 @@
           }),
         });
 
+        
+
         // Event handler for node selection
         myDiagram.addDiagramListener("ChangedSelection", function (e) {
-          // Reset all links to their default color
+          // Reset all links to their default state
           myDiagram.links.each(function (link) {
-            link.data.strokeWidth = 2; // Highlight stroke width
-            link.data.color = "black"; // Default color
-            myDiagram.model.updateTargetBindings(link.data);
+            const shape = link.findObject("LINKSHAPE");
+            if (shape) {
+              shape.stroke = "black"; // Default color
+              shape.strokeWidth = 2; // Default stroke width
+            }
           });
 
           // Highlight links connected to the selected node
-          var selectedNode = myDiagram.selection.first(); // Assumes single selection
+          const selectedNode = myDiagram.selection.first(); // Assumes single selection
           if (selectedNode && selectedNode instanceof go.Node) {
             selectedNode.findLinksConnected().each(function (link) {
-              link.data.strokeWidth = 3; // Highlight stroke width
-              link.data.color = "limegreen"; // Highlight color
-              link.layerName = "Foreground";
-              myDiagram.model.updateTargetBindings(link.data);
+              const shape = link.findObject("LINKSHAPE");
+              if (shape) {
+                shape.stroke = "limegreen"; // Highlight color
+                shape.strokeWidth = 3; // Highlight stroke width
+              }
+              link.layerName = "Foreground"; // Ensure the link is brought to the front
             });
           }
         });
+
 
 
 
@@ -210,12 +217,12 @@
             go.Link,
             { routing: go.Link.Orthogonal, curve: go.Link.Bezier, corner: 25 },
             $(go.Shape, 
-              { strokeWidth: 2 }, // Default stroke width
+              { name: "LINKSHAPE", strokeWidth: 2 }, // Default stroke width
               new go.Binding("stroke", "color"), // Bind color
               new go.Binding("strokeWidth", "strokeWidth") // Bind strokeWidth
             ),
             $(go.Shape, 
-              { toArrow: "Standard", stroke: null }, 
+              { name: "LINKSHAPE", toArrow: "Standard", stroke: null }, 
               new go.Binding("fill", "color")
             ),
             new go.Binding("curviness", "curviness"),
@@ -270,22 +277,20 @@
           )
         );
 
-
-
         // Horizontal Left link template
         myDiagram.linkTemplateMap.add(
           "HorizontalLeft",
           $(
             go.Link,
             {
-              routing: go.Link.Orthogonal,
+              routing: go.Link.AvoidsNodes,
               corner: 10,
               curve: go.Link.None,
               fromSpot: go.Spot.Left,
               toSpot: go.Spot.Right,
               selectable: true,
             },
-            $(go.Shape, { strokeWidth: 2, stroke: "black" }), // Link path
+            $(go.Shape, { name: "LINKSHAPE", strokeWidth: 2, stroke: "black" }), // Link path
             new go.Binding("opacity", "isRootLink", function (isRootLink) {
               return isRootLink ? 0 : 1; // Make root-related links fully transparent
             }),
@@ -313,14 +318,14 @@
           $(
             go.Link,
             {
-              routing: go.Link.Orthogonal,
+              routing: go.Link.AvoidsNodes,
               corner: 10,
               curve: go.Link.None,
               fromSpot: go.Spot.Right,
               toSpot: go.Spot.Left,
               selectable: true,
             },
-            $(go.Shape, { strokeWidth: 2, stroke: "black" }), // Link path
+            $(go.Shape, { name: "LINKSHAPE", strokeWidth: 2, stroke: "black" }), // Link path
             new go.Binding("opacity", "isRootLink", function (isRootLink) {
               return isRootLink ? 0 : 1; // Make root-related links fully transparent
             }),

@@ -63,6 +63,8 @@
                     "group": 10,
                     "Reference": "- Legends of Dune Trilogy"
                 },
+
+
                 {
                     "key": "vorian",
                     "Name": "Vorian Atriedes",
@@ -70,15 +72,16 @@
                     "House": "atriedes",
                     "Context": "Vorian Atreides was the son of Agamemnon, created from his genetic material. Vorian, born and raised among these machine rulers, initially serves as a liaison between Omnius (the evermind controlling the machines) and various human worlds. Unlike his father and the other Titans, he retains a strong sense of morality and empathy. Over time, he becomes deeply disillusioned by the cruelty of the machine empire. A turning point comes when Vorian encounters free humans fighting desperately to liberate themselves. He defects to the human side, bringing valuable knowledge that helps tip the scales in the Butlerian Jihad. Through acts of bravery, tactical brilliance, and personal sacrifice, he emerges as a heroic figure. His actions and principles—valor, honor, compassion—would go on to define the ethical backbone of House Atreides for millennia to come.",
                     "group": 10,
-                    "Reference": "- Legends of Dune Trilogy"
+                    "Reference": "- Legends of Dune Trilogy\n - Schools of Dune Trilogy"
                 },
+
                 {
                     "key": "hyla",
                     "Name": "Hyla",
                     "Gender": "female",
                     "House": "none",
                     "Context": "Hyla was the only daughter of the Titan general Agamemnon, born along with her brother Andros during the Titans' time on Richese. They were trained in great skills by their father, along with the other two remaining Titans, Juno and Dante, and given life-extension treatment and machine strength. In 108 BG, after the end of the Butlerian Jihad, Hyla and Andros were imprisoned in a preservation vault by the Titans. They were rescued by members of the Butlerian movement in 5 BG, long after the defeat of the Titans and the Omnius evermind, deciding to find their traitorous brother Vorian Atreides and potentially convert him back to the side of the thinking machines",
-                    "Reference": "- Legends of Dune Trilogy"
+                    "Reference": "- Schools of Dune Trilogy"
                 },
                 {
                     "key": "andros",
@@ -86,7 +89,7 @@
                     "Gender": "male",
                     "House": "none",
                     "Context": "Andros was the fourteenth son of the Titan general Agamemnon, born along with his sister Hyla during the Titans' time on Richese. They were trained in great skills by their father, along with the other two remaining Titans, Juno and Dante, and given life-extension treatment and machine strength. In 108 BG, after the end of the Butlerian Jihad, Andros and Hyla were imprisoned in a preservation vault by the Titans. They were rescued by members of the Butlerian movement in 5 BG, long after the defeat of the Titans and the Omnius evermind, deciding to find their traitorous brother Vorian Atreides and potentially convert him back to the side of the thinking machines",
-                    "Reference": "- Legends of Dune Trilogy"
+                    "Reference": "- Schools of Dune Trilogy"
                 },
 
                 {
@@ -106,6 +109,15 @@
                     "Reference": "- Legends of Dune Trilogy"
                 },
                 {
+                    "key": "mariella",
+                    "Name": "Mariella Atriedes",
+                    "Gender": "female",
+                    "House": "atriedes",
+                    "Context": "Beloved wife of Vorian after he retires on Kepler.",
+                    "group": 10,
+                    "Reference": "- Schools of Dune Trilogy"
+                },
+                {
                     "key": "karida",
                     "Name": "Karida Julan",
                     "Gender": "female",
@@ -114,6 +126,8 @@
                     "group": 10,
                     "Reference": "- Legends of Dune Trilogy"
                 },
+
+                
                 {
                     "key": "helmina",
                     "Name": "Helmina Berto-Anirul",
@@ -314,22 +328,6 @@
                     "Reference": "- ?"
                 },
                 {
-                    "key": "shander",
-                    "Name": "Shander Atriedes",
-                    "Gender": "male",
-                    "House": "atriedes",
-                    "Context": "",
-                    "Reference": "- ?"
-                },
-                {
-                    "key": "orry",
-                    "Name": "Orry Atriedes",
-                    "Gender": "male",
-                    "House": "atriedes",
-                    "Context": "",
-                    "Reference": "- ?"
-                },
-                {
                     "key": "miklos",
                     "Name": "Miklos Atriedes",
                     "Gender": "male",
@@ -385,6 +383,11 @@
                 },
                 {
                     "from": "vorian",
+                    "to": "mariella",
+                    "category": "HorizontalLeft"
+                },
+                {
+                    "from": "vorian",
                     "to": "estes"
                 },
                 {
@@ -398,6 +401,10 @@
                 {
                     "from": "leronica",
                     "to": "kagin"
+                },
+                {
+                    "from": "leronica",
+                    "to": "estes"
                 },
                 {
                     "from": "vorian",
@@ -554,14 +561,6 @@
                 {
                     "from": "vorian",
                     "to": "willem"
-                },
-                {
-                    "from": "vorian",
-                    "to": "shander"
-                },
-                {
-                    "from": "vorian",
-                    "to": "orry"
                 },
                 {
                     "from": "willem",
