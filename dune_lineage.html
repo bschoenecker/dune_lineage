@@ -125,7 +125,7 @@
                   height: 50,
                 },
                 new go.Binding("source", "House", function (house) {
-                  return "../images/" + house + ".png";
+                  return "images/" + house + ".png";
                 })
               ),
               // Vertical panel for Name and House TextBlocks
@@ -257,7 +257,7 @@
             $(
               go.Picture,
               {
-                source: "/images/snake.png",
+                source: "images/snake.png",
                 alignment: go.Spot.Center,
                 desiredSize: new go.Size(65, 65), // Adjust image size as needed
               }
