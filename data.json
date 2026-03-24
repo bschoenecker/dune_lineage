@@ -1,578 +1,1673 @@
+{
+    "nodeDataArray": [
         {
-            "nodeDataArray": [
-                {
-                    "key": "Root",
-                    "Name": "Dummy Root",
-                    "isRoot": true
-                },
-                {
-                    "key": "timePeriodBeneGesserit",
-                    "category": "TimePeriod",
-                    "TimePeriod": "est. 10,000 years"
-                },
-                {
-                    "key": 10,
-                    "isGroup": true
-                },
-                {
-                    "key": 20,
-                    "isGroup": true
-                },
-                {
-                    "key": 30,
-                    "isGroup": true
-                },
-                {
-                    "key": 40,
-                    "isGroup": true
-                },
-                {
-                    "key": 50,
-                    "isGroup": true
-                },
-                {
-                    "key": 60,
-                    "isGroup": true
-                },
-                {
-                    "key": 70,
-                    "isGroup": true
-                },
-                {
-                    "key": "atreus",
-                    "Name": "Atreus",
-                    "Gender": "male",
-                    "House": "none",
-                    "Context": "House Atreides gets its name from Atreus, a king in Greek mythology who was the father of Agamemnon and Menelaus. This connection is symbolic, linking the Atreides family to a long tradition of noble (and sometimes troubled) leadership. But as far as Dune is concerned, Atreus himself doesn’t show up, do anything, or even get mentioned much beyond the genealogical footnote.",
-                    "Reference": "- Legends of Dune Trilogy"
-                },
-                {
-                    "key": "agamemnon",
-                    "Name": "Agamemnon",
-                    "Gender": "male",
-                    "House": "none",
-                    "Context": "Agamemnon started out as a human long before the Jihad. Along with a group of other ambitious elites, he transcended mortality by transferring his brain into a mechanical body, becoming a “cymek.” As a cymek, he was essentially a human brain controlling a powerful, engineered shell. Agamemnon and the other Titans conquered vast swathes of the old empire, ruling ruthlessly and paving the way for the artificial intelligence collective known as Omnius to rise to power. The Titans, once in control, gradually became overshadowed by their own creation—this omnipresent AI network—though they never quite gave up their personal ambitions.",
-                    "Reference": "- Legends of Dune Trilogy"
-                },
-                {
-                    "key": "leronica",
-                    "Name": "Leronica Tergiet",
-                    "Gender": "female",
-                    "House": "none",
-                    "Context": "Leronica Tergiet is significant because she becomes the partner of Vorian Atreides during the Butlerian Jihad and mothers his children, thus helping to establish the human lineage that will evolve into the noble House Atreides. Her relationship with Vorian provides a grounding human connection that contrasts with his extraordinary lifespan, leaving a lasting legacy that influences the future Atreides line",
-                    "group": 10,
-                    "Reference": "- Legends of Dune Trilogy"
-                },
-
-
-                {
-                    "key": "vorian",
-                    "Name": "Vorian Atriedes",
-                    "Gender": "male",
-                    "House": "atriedes",
-                    "Context": "Vorian Atreides was the son of Agamemnon, created from his genetic material. Vorian, born and raised among these machine rulers, initially serves as a liaison between Omnius (the evermind controlling the machines) and various human worlds. Unlike his father and the other Titans, he retains a strong sense of morality and empathy. Over time, he becomes deeply disillusioned by the cruelty of the machine empire. A turning point comes when Vorian encounters free humans fighting desperately to liberate themselves. He defects to the human side, bringing valuable knowledge that helps tip the scales in the Butlerian Jihad. Through acts of bravery, tactical brilliance, and personal sacrifice, he emerges as a heroic figure. His actions and principles—valor, honor, compassion—would go on to define the ethical backbone of House Atreides for millennia to come.",
-                    "group": 10,
-                    "Reference": "- Legends of Dune Trilogy\n - Schools of Dune Trilogy"
-                },
-
-                {
-                    "key": "hyla",
-                    "Name": "Hyla",
-                    "Gender": "female",
-                    "House": "none",
-                    "Context": "Hyla was the only daughter of the Titan general Agamemnon, born along with her brother Andros during the Titans' time on Richese. They were trained in great skills by their father, along with the other two remaining Titans, Juno and Dante, and given life-extension treatment and machine strength. In 108 BG, after the end of the Butlerian Jihad, Hyla and Andros were imprisoned in a preservation vault by the Titans. They were rescued by members of the Butlerian movement in 5 BG, long after the defeat of the Titans and the Omnius evermind, deciding to find their traitorous brother Vorian Atreides and potentially convert him back to the side of the thinking machines",
-                    "Reference": "- Schools of Dune Trilogy"
-                },
-                {
-                    "key": "andros",
-                    "Name": "Andros",
-                    "Gender": "male",
-                    "House": "none",
-                    "Context": "Andros was the fourteenth son of the Titan general Agamemnon, born along with his sister Hyla during the Titans' time on Richese. They were trained in great skills by their father, along with the other two remaining Titans, Juno and Dante, and given life-extension treatment and machine strength. In 108 BG, after the end of the Butlerian Jihad, Andros and Hyla were imprisoned in a preservation vault by the Titans. They were rescued by members of the Butlerian movement in 5 BG, long after the defeat of the Titans and the Omnius evermind, deciding to find their traitorous brother Vorian Atreides and potentially convert him back to the side of the thinking machines",
-                    "Reference": "- Schools of Dune Trilogy"
-                },
-
-                {
-                    "key": "estes",
-                    "Name": "Estes Atriedes (Vazz)",
-                    "Gender": "male",
-                    "House": "atriedes",
-                    "Context": "Estes Atreides was one of the twin sons of Vorian Atreides and Leronica Tergiet. Estes was taller and more flamboyant compared to his brother Kagin. He and his brother were grown by their foster father, Kalem Vazz on Caladan, until he was killed by elecrans when they were young. Vorian tried to return to Leronica and get to know the boys better but did not want to spoil their memories by revealing he was their true father, a fact the teen boys discovered by accident; they were shocked since they preferred the memories with Vazz. Vorian attempted to have good connections with his sons and took care for their proper schooling but they were still distant to him, although Leronica insisted on taking his name. The distance was bigger towards Estes with whom he had gotten into a quarrel over a minor sarcastic comment. The two brothers took a regular dose of melange which helped them retain youthful appearances in their sixties, although Vorian still looked like their grandson.",
-                    "Reference": "- Legends of Dune Trilogy"
-                },
-                {
-                    "key": "kagin",
-                    "Name": "Kagin Atriedes (Vazz)",
-                    "Gender": "male",
-                    "House": "atriedes",
-                    "Context": "Kagin Atreides is one of the twin sons of Vorian Atreides and Leronica Tergiet. Kagin was quieter and shorter, introspective follower compared to his brother Estes. He and his brother were grown by their foster father, Kalem Vazz on Caladan, until he was killed by elecrans when they were young. Vorian tried to return to Leronica and meet the boys better but did not want to spoil their memories by revealing he was their true father, until Kagin discovered it himself by accident. The teen boys were shocked since they preferred the memories with Vazz. Vorian attempted his sons to have good connections, proper schooling but they were still distant to him, although Leronica insisted to take his name. The two brothers took a regular dose of melange which helped them retain youthful appearances in his sixties, although Vorian still looked like their grandson.",
-                    "Reference": "- Legends of Dune Trilogy"
-                },
-                {
-                    "key": "mariella",
-                    "Name": "Mariella Atriedes",
-                    "Gender": "female",
-                    "House": "atriedes",
-                    "Context": "Beloved wife of Vorian after he retires on Kepler.",
-                    "group": 10,
-                    "Reference": "- Schools of Dune Trilogy"
-                },
-                {
-                    "key": "karida",
-                    "Name": "Karida Julan",
-                    "Gender": "female",
-                    "House": "none",
-                    "Context": "Karida Julan was a girl from Hagal whom Vorian Atreides had met during his missions for the Butlerian Jihad. When she told him she bore a daughter, Vorian had sent plenty of credits to support the child and her mother. Since finding Leronica Tergiet, though, he'd had no further contact with her.",
-                    "group": 10,
-                    "Reference": "- Legends of Dune Trilogy"
-                },
-
-                
-                {
-                    "key": "helmina",
-                    "Name": "Helmina Berto-Anirul",
-                    "Gender": "female",
-                    "House": "none",
-                    "Context": "Helmina Berto-Anirul was the illegitimate daughter of Vorian Atreides and Karida Julan. Late in her life, she had a daughter, Raquella Berto-Anirul. She died in a groundcar accident before Vorian could meet her.",
-                    "Reference": "- Legends of Dune Trilogy"
-                },
-                {
-                    "key": "raquella",
-                    "Name": "Raquella Berto-Anirul",
-                    "Gender": "female",
-                    "House": "benegesserit",
-                    "Context": "Original founder of the Bene Gesserit. Vorian's granddaughter Raquella Berto-Anirul is significant because she takes the raw potential of a group of gifted sorcerer women on Rossak and molds them into the Bene Gesserit—one of the most influential and enduring sisterhoods in Dune’s universe. Her adaptability, survival skills, and visionary leadership set the stage for much of the intrigue and subtle power-brokering that define the Sisterhood in the centuries to come.",
-                    "Reference": "- Legends of Dune Trilogy \n - Schools of Dune Trilogy",
-                    "group": 20
-                },
-                {
-                    "key": "arlett",
-                    "Name": "Arlett",
-                    "Gender": "female",
-                    "House": "benegesserit",
-                    "Context": "Daughter from Raquella and Dr. Mohandas Suk. Arlett was compelled to stay with the school and became a graduate of the Sisterhood. She then became a traveller, stopping in at out-of-the-way places to discuss the Rossak school. This included a stop at Lankiveil where she recruited Valya Harkonnen. Arlett also refuses to be separated from Dorotea (her daughter), insisting that she would leave the Sisterhood and find Dorotea's father",
-                    "Reference": "- Legends of Dune Trilogy \n - Schools of Dune Trilogy"
-                },
-                {
-                    "key": "mohandes",
-                    "Name": "Mohandes Suk",
-                    "Gender": "male",
-                    "House": "suk",
-                    "Context": "Dr. Mohandas Suk was the grandnephew of the great Rajid Suk and the founder of the Suk Medical School. With his lover, Raquella Berto-Anirul (granddaughter of Vorian Atreides) they established the Hospital for Incurable Diseases on Parmentier, a former Synchronized World recolonized by the League of Nobles. Later, in 107 BG, Mohandas and Raquella founded the Humanities Medical Commission and went to more than thirty planets in their efforts to treat plague victims with the help of LS Recovery, a medical starship bought for them by Vorian. In 88 BG, they traveled to Rossak to help fight the Rossak Epidemic another outbreak of the Scourge. Mohandas remained on board the LS Recovery studying samples sent by Raquella and trying to find a vaccine. The two saw each other very rarely during that condition, due to the quarantine. After that situation was resolved, Mohandas saw Raquella for one last time and conceived a child with her. Raquella chose to stay on Rossak to lead the Sorceresses in a new Sisterhood. ",
-                    "Reference": "- Legends of Dune Trilogy \n - Schools of Dune Trilogy",
-                    "group": 20
-                },
-                {
-                    "key": "doritea",
-                    "Name": "Doritea",
-                    "Gender": "female",
-                    "House": "benegesserit",
-                    "Context": "Dorotea was the second Reverend Mother in history, the founder and leader of the schismatic Orthodox Sisterhood on Salusa Secundus, and Truthsayer to Padishah Emperor Salvador Corrino. When Dorotea goes through the agony she gains access to her Other Memory, and this is when she discovers she is the daughter of Arlett and the grand-daughter of Raquella. Dorotea had never known her mother, but could now see that Arlett was cast out of the Sisterhood after giving birth to her (this is where she became a travelling recruiter). Dorotea also became aware of Raquella's actions in switching the babies around (i.e. Arlett's daughter), but also, more importantly she had access to Other Memory when it came to the breeding records, and the thinking machines being used by the Sisterhood to do so.",
-                    "Reference": "- Schools of Dune Trilogy"
-                },
-                {
-                    "key": "ulf",
-                    "Name": "Ulf Harkonnen",
-                    "Gender": "male",
-                    "House": "harkonnen",
-                    "Context": "Ulf Harkonnen was the father of Piers and Xavier Harkonnen, and the husband of Katarina Harkonnen. He was the holder of the family's mining business on Hagal and true to Harkonnen tradition, he was naive, cruel, gruff and defiant, to the dismay of his more humanistic son. On the family's way to Salusa Secundus he scorned his son for his humanistic views towards the slaves which would harm the business. When they entered Caladan system, their space yaught was attacked by six patrolling cymeks led by Agamemnon. Ulf bravely and defiantly responded to the attack, but the doomed ship was not fit for such circumstances. Piers was ejected in a lifepod but it was too late for his parents and both perished in the explosion.",
-                    "Reference": "- Prelude to Dune trilogy",
-                    "category": "MainSource",
-                    "group": 30
-                },
-                {
-                    "key": "katarina",
-                    "Name": "Katarina du Bohan",
-                    "Gender": "female",
-                    "House": "none",
-                    "Context": "She was a member of the noble House du Bohan before marrying into House Harkonnen. Her marriage helped strengthen the political power of House Harkonnen, as alliances through marriage were a common strategy among noble families in the Dune universe to consolidate influence and resources.",
-                    "Reference": "- Prelude to Dune trilogy",
-                    "group": 30
-                },
-                {
-                    "key": "piers",
-                    "Name": "Piers Harkonnen",
-                    "Gender": "male",
-                    "House": "harkonnen",
-                    "Context": "Piers Harkonnen was the elder son of Ulf and Katarina Harkonnen and brother of Xavier Harkonnen. On his 21st year, his father put him in charge of the family's sheet diamond mines on Hagal. Piers however was against his family's cutthroat policy. He respected the slaves (called them 'workers') and insisted they deserved rights, and let them work without typical Harkonnen regulations and close oversight; something that would augment their productivity and benefit his own family. Ulf wasn't impressed when he discovered this and took him to Salusa Secundus. During the trip however, their family yaught was attacked by Agamemnon and other 6 cymek ships. When all hope was lost, Piers was secured in a lifepod but it was too late for his parents. The yaught was destroyed and Piers crashed on Caladan, however the cymeks continued to pursue him. Piers initially managed to lose his pursuers in the icy landscape when suddenly a Zensunni Caladan primitives' tribe, led by Tiddoc, saved his life. They had devised methods with combined attacks, to disable cymeks even with primitive tools. The next day, Agamemnon himself with 3 cymeks assaulted the village. Agamemnon grabbed Piers who tried to distract him, when they both fell in a gayser. Agamemnon's brain canister was ejected in space and Piers suffered serious bruises. Knowing that he would find no way back to the League words, Piers spent the rest of his life with the Zensunni, dying later that year. Since he was presumed dead ever since, the Harkonnen heritage passed to his younger brother.",
-                    "Reference": "- Prelude to Dune trilogy"
-                },
-                {
-                    "key": "octa",
-                    "Name": "Octa Butler",
-                    "Gender": "female",
-                    "House": "none",
-                    "Context": "",
-                    "Reference": "- Legends of Dune trilogy",
-                    "group": 40
-                },
-                {
-                    "key": "xavier",
-                    "Name": "Xavier Harkonnen",
-                    "Gender": "male",
-                    "House": "harkonnen",
-                    "Context": "Xavier Harkonnen is a heroic military leader during the Butlerian Jihad, and the original lover of Serena Butler. He and Serena were to be married until she was captured by the machines and held by Erasmus. She was thought dead for years, and Xavier ended up marrying Serena's sister Octa. Unlike the infamous reputation of later Harkonnens, Xavier is noble, honorable, and self-sacrificing, playing a key role in humanity's fight against the thinking machines. His ultimate martyrdom underscores his dedication to the cause. Despite his valor, his house's legacy diverges drastically, becoming synonymous with cruelty and tyranny in later generations.",
-                    "Reference": "- Legends of Dune trilogy",
-                    "group": 40
-                },
-                {
-                    "key": "serena",
-                    "Name": "Serena Butler",
-                    "Gender": "female",
-                    "House": "none",
-                    "Context": "She was a charismatic leader of the Butlerian Jihad, the human revolt against the oppressive thinking machines. She was the early lover of Xavier Harkonnen and was captured by the machines during the defense of Zimia. Unbeknownst to her, she was pregnant at the time of her capture with Xavier's son Manion (junior). Serena became the personal study of the machine Erasmus and gave birth to baby Manion while in the machines custody. Erasmus became jealous of the time Serena was devoting to Manion and so was murdered by Erasmus in front of throngs of human slaves. This spawned the fervor that instigated the Butlerian Jihad. Her personal tragedy—the death of her infant son at the hands of the machines—sparked widespread outrage and united humanity in the fight. Revered as a martyr and symbol of resistance, Serena's leadership and sacrifice help lay the foundation for the eventual rise of the Imperium and the anti-technology ethos of the Dune universe.",
-                    "Reference": "- Legends of Dune trilogy",
-                    "group": 40
-                },
-                {
-                    "key": "manion",
-                    "Name": "Manion Butler",
-                    "Gender": "male",
-                    "House": "none",
-                    "Context": "",
-                    "Reference": "- Legends of Dune trilogy",
-                    "category": "MainSource",
-                    "group": 50
-                },
-                {
-                    "key": "livia",
-                    "Name": "Livia Butler",
-                    "Gender": "female",
-                    "House": "none",
-                    "Context": "",
-                    "Reference": "- Legends of Dune trilogy",
-                    "group": 50
-                },
-                {
-                    "key": "babymanion",
-                    "Name": "Baby Manion (Junior)",
-                    "Gender": "male",
-                    "House": "none",
-                    "Context": "Manion Butler, also known as the \"Baby Butlerian,\" is a key symbolic figure. He is the infant son of Serena Butler, tragically murdered by the thinking machines as an act of cruelty. His death becomes a rallying cry for humanity during the Butlerian Jihad, uniting people against the machines and solidifying the anti-AI ideology that defines the future Imperium. Manion’s martyrdom cements his role as a lasting symbol of human resistance and sacrifice.",
-                    "Reference": "- Legends of Dune trilogy"
-                },
-                {
-                    "key": "wandra",
-                    "Name": "Wandra Harkonnen (Butler)",
-                    "Gender": "female",
-                    "House": "none",
-                    "Context": "",
-                    "Reference": "- Legends of Dune trilogy",
-                    "group": 60
-                },
-                {
-                    "key": "roella",
-                    "Name": "Roella Harkonnen",
-                    "Gender": "female",
-                    "House": "none",
-                    "Context": "",
-                    "Reference": "- Legends of Dune trilogy"
-                },
-                {
-                    "key": "quentin",
-                    "Name": "Quentin Vigar (Butler)",
-                    "Gender": "male",
-                    "House": "none",
-                    "Context": "",
-                    "Reference": "- Legends of Dune trilogy",
-                    "group": 60
-                },
-                {
-                    "key": "omilia",
-                    "Name": "Omilia Harkonnen",
-                    "Gender": "female",
-                    "House": "harkonnen",
-                    "Context": "One of Xavier's three daughter with Octa, Omilia is a historical figure who contributed to the establishment and influence of House Harkonnen during its formative years in the Landsraad, the political assembly of noble houses. Details about her personality are sparse, but she is often associated with the early Harkonnen values of ambition and cunning, which set the tone for the house’s future trajectory. Omilia lived during the early days of House Harkonnen's rise, before it became one of the most infamous houses in the Imperium.",
-                    "Reference": "- Prelude to Dune trilogy"
-                },
-                {
-                    "key": "faykan",
-                    "Name": "Faykan Butler (Corrino)",
-                    "Gender": "male",
-                    "House": "corrino",
-                    "Context": "",
-                    "Reference": "- Legends of Dune trilogy"
-                },
-                {
-                    "key": "rikov",
-                    "Name": "Rikov Butler",
-                    "Gender": "male",
-                    "House": "none",
-                    "Context": "",
-                    "Reference": "- Legends of Dune trilogy",
-                    "group": 70
-                },
-                {
-                    "key": "abulurd",
-                    "Name": "Abulurd Butler (Harkonnen)",
-                    "Gender": "male",
-                    "House": "harkonnen",
-                    "Context": "",
-                    "Reference": "- Legends of Dune trilogy"
-                },
-                {
-                    "key": "kohe",
-                    "Name": "Kohe Tantor",
-                    "Gender": "female",
-                    "House": "none",
-                    "Context": "",
-                    "Reference": "- Legends of Dune trilogy",
-                    "group": 70
-                },
-                {
-                    "key": "willem",
-                    "Name": "Willem Atriedes",
-                    "Gender": "male",
-                    "House": "atriedes",
-                    "Context": "Duke Willem Atreides was the founder of House Atreides and its first representitive in the Landsraad League. Following his great-great-great-grandfather Vorian's supposed death at the hands of Valya Harkonnen's schemes, Willem schemed to kill her brother Danvis Harkonnen in revenge. When in competition with Danvis for the role of Imperial Chamberlain all the other candidates appeared dead, Willem was blamed, and when Danvis appeared dead he was expelled from a new list of candidates. Meanwhile, his cousin Luc Atreides and his family visited from Kepler. After Danvis' apparant death, he was killed by the Harkonnen cousin Gerhard in an act of kanly.",
-                    "Reference": "- ?"
-                },
-                {
-                    "key": "miklos",
-                    "Name": "Miklos Atriedes",
-                    "Gender": "male",
-                    "House": "atriedes",
-                    "Context": "",
-                    "Reference": "- ?"
-                },
-                {
-                    "key": "kean",
-                    "Name": "Kean Atriedes",
-                    "Gender": "male",
-                    "House": "atriedes",
-                    "Context": "",
-                    "Reference": "- ?"
-                }
-            ],
-            "linkDataArray": [
-                {
-                    "from": "Root",
-                    "to": "atreus",
-                    "isRootLink": true
-                },
-                {
-                    "from": "Root",
-                    "to": "katarina",
-                    "isRootLink": true
-                },
-                {
-                    "from": "Root",
-                    "to": "manion",
-                    "isRootLink": true
-                },
-                {
-                    "from": "atreus",
-                    "to": "agamemnon"
-                },
-                {
-                    "from": "agamemnon",
-                    "to": "vorian"
-                },
-                {
-                    "from": "agamemnon",
-                    "to": "hyla"
-                },
-                {
-                    "from": "agamemnon",
-                    "to": "andros"
-                },
-                {
-                    "from": "vorian",
-                    "to": "karida",
-                    "category": "HorizontalLeft"
-                },
-                {
-                    "from": "vorian",
-                    "to": "mariella",
-                    "category": "HorizontalLeft"
-                },
-                {
-                    "from": "vorian",
-                    "to": "estes"
-                },
-                {
-                    "from": 9,
-                    "to": "estes"
-                },
-                {
-                    "from": "vorian",
-                    "to": "kagin"
-                },
-                {
-                    "from": "leronica",
-                    "to": "kagin"
-                },
-                {
-                    "from": "leronica",
-                    "to": "estes"
-                },
-                {
-                    "from": "vorian",
-                    "to": "leronica",
-                    "category": "HorizontalRight"
-                },
-                {
-                    "from": "vorian",
-                    "to": "helmina"
-                },
-                {
-                    "from": "karida",
-                    "to": "helmina"
-                },
-                {
-                    "from": "helmina",
-                    "to": "raquella"
-                },
-                {
-                    "from": "raquella",
-                    "to": "arlett"
-                },
-                {
-                    "from": "mohandes",
-                    "to": "raquella",
-                    "category": "HorizontalRight"
-                },
-                {
-                    "from": "mohandes",
-                    "to": "arlett"
-                },
-                {
-                    "from": "arlett",
-                    "to": "doritea"
-                },
-                {
-                    "from": "ulf",
-                    "to": "katarina",
-                    "category": "HorizontalLeft"
-                },
-                {
-                    "from": "ulf",
-                    "to": "piers"
-                },
-                {
-                    "from": "katarina",
-                    "to": "piers"
-                },
-                {
-                    "from": "ulf",
-                    "to": "xavier"
-                },
-                {
-                    "from": "katarina",
-                    "to": "xavier"
-                },
-                {
-                    "from": "xavier",
-                    "to": "serena",
-                    "category": "HorizontalLeft"
-                },
-                {
-                    "from": "manion",
-                    "to": "livia",
-                    "category": "HorizontalLeft"
-                },
-                {
-                    "from": "xavier",
-                    "to": "babymanion"
-                },
-                {
-                    "from": "serena",
-                    "to": "babymanion"
-                },
-                {
-                    "from": "livia",
-                    "to": "serena"
-                },
-                {
-                    "from": "manion",
-                    "to": "serena"
-                },
-                {
-                    "from": "octa",
-                    "to": "xavier",
-                    "category": "HorizontalLeft"
-                },
-                {
-                    "from": "livia",
-                    "to": "octa"
-                },
-                {
-                    "from": "manion",
-                    "to": "octa"
-                },
-                {
-                    "from": "xavier",
-                    "to": "wandra"
-                },
-                {
-                    "from": "octa",
-                    "to": "wandra"
-                },
-                {
-                    "from": "xavier",
-                    "to": "roella"
-                },
-                {
-                    "from": "octa",
-                    "to": "roella"
-                },
-                {
-                    "from": "quentin",
-                    "to": "wandra",
-                    "category": "HorizontalRight"
-                },
-                {
-                    "from": "xavier",
-                    "to": "omilia"
-                },
-                {
-                    "from": "octa",
-                    "to": "omilia"
-                },
-                {
-                    "from": "wandra",
-                    "to": "faykan"
-                },
-                {
-                    "from": "quentin",
-                    "to": "faykan"
-                },
-                {
-                    "from": "wandra",
-                    "to": "abulurd"
-                },
-                {
-                    "from": "quentin",
-                    "to": "abulurd"
-                },
-                {
-                    "from": "wandra",
-                    "to": "rikov"
-                },
-                {
-                    "from": "quentin",
-                    "to": "rikov"
-                },
-                {
-                    "from": "kohe",
-                    "to": "rikov",
-                    "category": "HorizontalRight"
-                },
-                {
-                    "from": "vorian",
-                    "to": "willem"
-                },
-                {
-                    "from": "willem",
-                    "to": "miklos"
-                },
-                {
-                    "from": "miklos",
-                    "to": "kean"
-                },
-                {
-                    "from": "doritea",
-                    "to": "timePeriodBeneGesserit"
-                }
-            ]
+            "key": "Root",
+            "Name": "Dummy Root",
+            "isRoot": true
+        },
+        {
+            "key": "timePeriodBeneGesserit",
+            "category": "TimePeriod",
+            "TimePeriod": "est. 10,000 years"
+        },
+        {
+            "key": 10,
+            "isGroup": true
+        },
+        {
+            "key": 20,
+            "isGroup": true
+        },
+        {
+            "key": 30,
+            "isGroup": true
+        },
+        {
+            "key": 40,
+            "isGroup": true
+        },
+        {
+            "key": 50,
+            "isGroup": true
+        },
+        {
+            "key": 60,
+            "isGroup": true
+        },
+        {
+            "key": 70,
+            "isGroup": true
+        },
+        {
+            "key": "atreus",
+            "Name": "Atreus",
+            "Gender": "male",
+            "House": "none",
+            "Context": "House Atreides gets its name from Atreus, a king in Greek mythology who was the father of Agamemnon and Menelaus. This connection is symbolic, linking the Atreides family to a long tradition of noble (and sometimes troubled) leadership. But as far as Dune is concerned, Atreus himself doesn’t show up, do anything, or even get mentioned much beyond the genealogical footnote.",
+            "Reference": "- Legends of Dune Trilogy"
+        },
+        {
+            "key": "agamemnon",
+            "Name": "Agamemnon",
+            "Gender": "male",
+            "House": "none",
+            "Context": "Agamemnon started out as a human long before the Jihad. Along with a group of other ambitious elites, he transcended mortality by transferring his brain into a mechanical body, becoming a “cymek.” As a cymek, he was essentially a human brain controlling a powerful, engineered shell. Agamemnon and the other Titans conquered vast swathes of the old empire, ruling ruthlessly and paving the way for the artificial intelligence collective known as Omnius to rise to power. The Titans, once in control, gradually became overshadowed by their own creation—this omnipresent AI network—though they never quite gave up their personal ambitions.",
+            "Reference": "- Legends of Dune Trilogy"
+        },
+        {
+            "key": "leronica",
+            "Name": "Leronica Tergiet",
+            "Gender": "female",
+            "House": "none",
+            "Context": "Leronica Tergiet is significant because she becomes the partner of Vorian Atreides during the Butlerian Jihad and mothers his children, thus helping to establish the human lineage that will evolve into the noble House Atreides. Her relationship with Vorian provides a grounding human connection that contrasts with his extraordinary lifespan, leaving a lasting legacy that influences the future Atreides line",
+            "group": 10,
+            "Reference": "- Legends of Dune Trilogy"
+        },
+        {
+            "key": "vorian",
+            "Name": "Vorian Atriedes",
+            "Gender": "male",
+            "House": "atriedes",
+            "Context": "Vorian Atreides was the son of Agamemnon, created from his genetic material. Vorian, born and raised among these machine rulers, initially serves as a liaison between Omnius (the evermind controlling the machines) and various human worlds. Unlike his father and the other Titans, he retains a strong sense of morality and empathy. Over time, he becomes deeply disillusioned by the cruelty of the machine empire. A turning point comes when Vorian encounters free humans fighting desperately to liberate themselves. He defects to the human side, bringing valuable knowledge that helps tip the scales in the Butlerian Jihad. Through acts of bravery, tactical brilliance, and personal sacrifice, he emerges as a heroic figure. His actions and principles—valor, honor, compassion—would go on to define the ethical backbone of House Atreides for millennia to come.",
+            "group": 10,
+            "Reference": "- Legends of Dune Trilogy\n - Schools of Dune Trilogy"
+        },
+        {
+            "key": "hyla",
+            "Name": "Hyla",
+            "Gender": "female",
+            "House": "none",
+            "Context": "Hyla was the only daughter of the Titan general Agamemnon, born along with her brother Andros during the Titans' time on Richese. They were trained in great skills by their father, along with the other two remaining Titans, Juno and Dante, and given life-extension treatment and machine strength. In 108 BG, after the end of the Butlerian Jihad, Hyla and Andros were imprisoned in a preservation vault by the Titans. They were rescued by members of the Butlerian movement in 5 BG, long after the defeat of the Titans and the Omnius evermind, deciding to find their traitorous brother Vorian Atreides and potentially convert him back to the side of the thinking machines",
+            "Reference": "- Schools of Dune Trilogy"
+        },
+        {
+            "key": "andros",
+            "Name": "Andros",
+            "Gender": "male",
+            "House": "none",
+            "Context": "Andros was the fourteenth son of the Titan general Agamemnon, born along with his sister Hyla during the Titans' time on Richese. They were trained in great skills by their father, along with the other two remaining Titans, Juno and Dante, and given life-extension treatment and machine strength. In 108 BG, after the end of the Butlerian Jihad, Andros and Hyla were imprisoned in a preservation vault by the Titans. They were rescued by members of the Butlerian movement in 5 BG, long after the defeat of the Titans and the Omnius evermind, deciding to find their traitorous brother Vorian Atreides and potentially convert him back to the side of the thinking machines",
+            "Reference": "- Schools of Dune Trilogy"
+        },
+        {
+            "key": "estes",
+            "Name": "Estes Atriedes (Vazz)",
+            "Gender": "male",
+            "House": "atriedes",
+            "Context": "Estes Atreides was one of the twin sons of Vorian Atreides and Leronica Tergiet. Estes was taller and more flamboyant compared to his brother Kagin. He and his brother were grown by their foster father, Kalem Vazz on Caladan, until he was killed by elecrans when they were young. Vorian tried to return to Leronica and get to know the boys better but did not want to spoil their memories by revealing he was their true father, a fact the teen boys discovered by accident; they were shocked since they preferred the memories with Vazz. Vorian attempted to have good connections with his sons and took care for their proper schooling but they were still distant to him, although Leronica insisted on taking his name. The distance was bigger towards Estes with whom he had gotten into a quarrel over a minor sarcastic comment. The two brothers took a regular dose of melange which helped them retain youthful appearances in their sixties, although Vorian still looked like their grandson.",
+            "Reference": "- Legends of Dune Trilogy"
+        },
+        {
+            "key": "kagin",
+            "Name": "Kagin Atriedes (Vazz)",
+            "Gender": "male",
+            "House": "atriedes",
+            "Context": "Kagin Atreides is one of the twin sons of Vorian Atreides and Leronica Tergiet. Kagin was quieter and shorter, introspective follower compared to his brother Estes. He and his brother were grown by their foster father, Kalem Vazz on Caladan, until he was killed by elecrans when they were young. Vorian tried to return to Leronica and meet the boys better but did not want to spoil their memories by revealing he was their true father, until Kagin discovered it himself by accident. The teen boys were shocked since they preferred the memories with Vazz. Vorian attempted his sons to have good connections, proper schooling but they were still distant to him, although Leronica insisted to take his name. The two brothers took a regular dose of melange which helped them retain youthful appearances in his sixties, although Vorian still looked like their grandson.",
+            "Reference": "- Legends of Dune Trilogy"
+        },
+        {
+            "key": "mariella",
+            "Name": "Mariella Atriedes",
+            "Gender": "female",
+            "House": "atriedes",
+            "Context": "Beloved wife of Vorian after he retires on Kepler.",
+            "group": 10,
+            "Reference": "- Schools of Dune Trilogy"
+        },
+        {
+            "key": "karida",
+            "Name": "Karida Julan",
+            "Gender": "female",
+            "House": "none",
+            "Context": "Karida Julan was a girl from Hagal whom Vorian Atreides had met during his missions for the Butlerian Jihad. When she told him she bore a daughter, Vorian had sent plenty of credits to support the child and her mother. Since finding Leronica Tergiet, though, he'd had no further contact with her.",
+            "group": 10,
+            "Reference": "- Legends of Dune Trilogy"
+        },
+        {
+            "key": "helmina",
+            "Name": "Helmina Berto-Anirul",
+            "Gender": "female",
+            "House": "none",
+            "Context": "Helmina Berto-Anirul was the illegitimate daughter of Vorian Atreides and Karida Julan. Late in her life, she had a daughter, Raquella Berto-Anirul. She died in a groundcar accident before Vorian could meet her.",
+            "Reference": "- Legends of Dune Trilogy"
+        },
+        {
+            "key": "raquella",
+            "Name": "Raquella Berto-Anirul",
+            "Gender": "female",
+            "House": "benegesserit",
+            "Context": "Original founder of the Bene Gesserit. Vorian's granddaughter Raquella Berto-Anirul is significant because she takes the raw potential of a group of gifted sorcerer women on Rossak and molds them into the Bene Gesserit—one of the most influential and enduring sisterhoods in Dune’s universe. Her adaptability, survival skills, and visionary leadership set the stage for much of the intrigue and subtle power-brokering that define the Sisterhood in the centuries to come.",
+            "Reference": "- Legends of Dune Trilogy \n - Schools of Dune Trilogy",
+            "group": 20
+        },
+        {
+            "key": "arlett",
+            "Name": "Arlett",
+            "Gender": "female",
+            "House": "benegesserit",
+            "Context": "Daughter from Raquella and Dr. Mohandas Suk. Arlett was compelled to stay with the school and became a graduate of the Sisterhood. She then became a traveller, stopping in at out-of-the-way places to discuss the Rossak school. This included a stop at Lankiveil where she recruited Valya Harkonnen. Arlett also refuses to be separated from Dorotea (her daughter), insisting that she would leave the Sisterhood and find Dorotea's father",
+            "Reference": "- Legends of Dune Trilogy \n - Schools of Dune Trilogy"
+        },
+        {
+            "key": "mohandes",
+            "Name": "Mohandes Suk",
+            "Gender": "male",
+            "House": "suk",
+            "Context": "Dr. Mohandas Suk was the grandnephew of the great Rajid Suk and the founder of the Suk Medical School. With his lover, Raquella Berto-Anirul (granddaughter of Vorian Atreides) they established the Hospital for Incurable Diseases on Parmentier, a former Synchronized World recolonized by the League of Nobles. Later, in 107 BG, Mohandas and Raquella founded the Humanities Medical Commission and went to more than thirty planets in their efforts to treat plague victims with the help of LS Recovery, a medical starship bought for them by Vorian. In 88 BG, they traveled to Rossak to help fight the Rossak Epidemic another outbreak of the Scourge. Mohandas remained on board the LS Recovery studying samples sent by Raquella and trying to find a vaccine. The two saw each other very rarely during that condition, due to the quarantine. After that situation was resolved, Mohandas saw Raquella for one last time and conceived a child with her. Raquella chose to stay on Rossak to lead the Sorceresses in a new Sisterhood. ",
+            "Reference": "- Legends of Dune Trilogy \n - Schools of Dune Trilogy",
+            "group": 20
+        },
+        {
+            "key": "doritea",
+            "Name": "Doritea",
+            "Gender": "female",
+            "House": "benegesserit",
+            "Context": "Dorotea was the second Reverend Mother in history, the founder and leader of the schismatic Orthodox Sisterhood on Salusa Secundus, and Truthsayer to Padishah Emperor Salvador Corrino. When Dorotea goes through the agony she gains access to her Other Memory, and this is when she discovers she is the daughter of Arlett and the grand-daughter of Raquella. Dorotea had never known her mother, but could now see that Arlett was cast out of the Sisterhood after giving birth to her (this is where she became a travelling recruiter). Dorotea also became aware of Raquella's actions in switching the babies around (i.e. Arlett's daughter), but also, more importantly she had access to Other Memory when it came to the breeding records, and the thinking machines being used by the Sisterhood to do so.",
+            "Reference": "- Schools of Dune Trilogy"
+        },
+        {
+            "key": "ulf",
+            "Name": "Ulf Harkonnen",
+            "Gender": "male",
+            "House": "harkonnen",
+            "Context": "Ulf Harkonnen was the father of Piers and Xavier Harkonnen, and the husband of Katarina Harkonnen. He was the holder of the family's mining business on Hagal and true to Harkonnen tradition, he was naive, cruel, gruff and defiant, to the dismay of his more humanistic son. On the family's way to Salusa Secundus he scorned his son for his humanistic views towards the slaves which would harm the business. When they entered Caladan system, their space yaught was attacked by six patrolling cymeks led by Agamemnon. Ulf bravely and defiantly responded to the attack, but the doomed ship was not fit for such circumstances. Piers was ejected in a lifepod but it was too late for his parents and both perished in the explosion.",
+            "Reference": "- Prelude to Dune trilogy",
+            "category": "MainSource",
+            "group": 30
+        },
+        {
+            "key": "katarina",
+            "Name": "Katarina du Bohan",
+            "Gender": "female",
+            "House": "none",
+            "Context": "She was a member of the noble House du Bohan before marrying into House Harkonnen. Her marriage helped strengthen the political power of House Harkonnen, as alliances through marriage were a common strategy among noble families in the Dune universe to consolidate influence and resources.",
+            "Reference": "- Prelude to Dune trilogy",
+            "group": 30
+        },
+        {
+            "key": "piers",
+            "Name": "Piers Harkonnen",
+            "Gender": "male",
+            "House": "harkonnen",
+            "Context": "Piers Harkonnen was the elder son of Ulf and Katarina Harkonnen and brother of Xavier Harkonnen. On his 21st year, his father put him in charge of the family's sheet diamond mines on Hagal. Piers however was against his family's cutthroat policy. He respected the slaves (called them 'workers') and insisted they deserved rights, and let them work without typical Harkonnen regulations and close oversight; something that would augment their productivity and benefit his own family. Ulf wasn't impressed when he discovered this and took him to Salusa Secundus. During the trip however, their family yaught was attacked by Agamemnon and other 6 cymek ships. When all hope was lost, Piers was secured in a lifepod but it was too late for his parents. The yaught was destroyed and Piers crashed on Caladan, however the cymeks continued to pursue him. Piers initially managed to lose his pursuers in the icy landscape when suddenly a Zensunni Caladan primitives' tribe, led by Tiddoc, saved his life. They had devised methods with combined attacks, to disable cymeks even with primitive tools. The next day, Agamemnon himself with 3 cymeks assaulted the village. Agamemnon grabbed Piers who tried to distract him, when they both fell in a gayser. Agamemnon's brain canister was ejected in space and Piers suffered serious bruises. Knowing that he would find no way back to the League words, Piers spent the rest of his life with the Zensunni, dying later that year. Since he was presumed dead ever since, the Harkonnen heritage passed to his younger brother.",
+            "Reference": "- Prelude to Dune trilogy"
+        },
+        {
+            "key": "octa",
+            "Name": "Octa Butler",
+            "Gender": "female",
+            "House": "none",
+            "Context": "",
+            "Reference": "- Legends of Dune trilogy",
+            "group": 40
+        },
+        {
+            "key": "xavier",
+            "Name": "Xavier Harkonnen",
+            "Gender": "male",
+            "House": "harkonnen",
+            "Context": "Xavier Harkonnen is a heroic military leader during the Butlerian Jihad, and the original lover of Serena Butler. He and Serena were to be married until she was captured by the machines and held by Erasmus. She was thought dead for years, and Xavier ended up marrying Serena's sister Octa. Unlike the infamous reputation of later Harkonnens, Xavier is noble, honorable, and self-sacrificing, playing a key role in humanity's fight against the thinking machines. His ultimate martyrdom underscores his dedication to the cause. Despite his valor, his house's legacy diverges drastically, becoming synonymous with cruelty and tyranny in later generations.",
+            "Reference": "- Legends of Dune trilogy",
+            "group": 40
+        },
+        {
+            "key": "serena",
+            "Name": "Serena Butler",
+            "Gender": "female",
+            "House": "none",
+            "Context": "She was a charismatic leader of the Butlerian Jihad, the human revolt against the oppressive thinking machines. She was the early lover of Xavier Harkonnen and was captured by the machines during the defense of Zimia. Unbeknownst to her, she was pregnant at the time of her capture with Xavier's son Manion (junior). Serena became the personal study of the machine Erasmus and gave birth to baby Manion while in the machines custody. Erasmus became jealous of the time Serena was devoting to Manion and so was murdered by Erasmus in front of throngs of human slaves. This spawned the fervor that instigated the Butlerian Jihad. Her personal tragedy—the death of her infant son at the hands of the machines—sparked widespread outrage and united humanity in the fight. Revered as a martyr and symbol of resistance, Serena's leadership and sacrifice help lay the foundation for the eventual rise of the Imperium and the anti-technology ethos of the Dune universe.",
+            "Reference": "- Legends of Dune trilogy",
+            "group": 40
+        },
+        {
+            "key": "manion",
+            "Name": "Manion Butler",
+            "Gender": "male",
+            "House": "none",
+            "Context": "",
+            "Reference": "- Legends of Dune trilogy",
+            "category": "MainSource",
+            "group": 50
+        },
+        {
+            "key": "livia",
+            "Name": "Livia Butler",
+            "Gender": "female",
+            "House": "none",
+            "Context": "",
+            "Reference": "- Legends of Dune trilogy",
+            "group": 50
+        },
+        {
+            "key": "babymanion",
+            "Name": "Baby Manion (Junior)",
+            "Gender": "male",
+            "House": "none",
+            "Context": "Manion Butler, also known as the \"Baby Butlerian,\" is a key symbolic figure. He is the infant son of Serena Butler, tragically murdered by the thinking machines as an act of cruelty. His death becomes a rallying cry for humanity during the Butlerian Jihad, uniting people against the machines and solidifying the anti-AI ideology that defines the future Imperium. Manion’s martyrdom cements his role as a lasting symbol of human resistance and sacrifice.",
+            "Reference": "- Legends of Dune trilogy"
+        },
+        {
+            "key": "wandra",
+            "Name": "Wandra Harkonnen (Butler)",
+            "Gender": "female",
+            "House": "none",
+            "Context": "",
+            "Reference": "- Legends of Dune trilogy",
+            "group": 60
+        },
+        {
+            "key": "roella",
+            "Name": "Roella Harkonnen",
+            "Gender": "female",
+            "House": "none",
+            "Context": "",
+            "Reference": "- Legends of Dune trilogy"
+        },
+        {
+            "key": "quentin",
+            "Name": "Quentin Vigar (Butler)",
+            "Gender": "male",
+            "House": "none",
+            "Context": "",
+            "Reference": "- Legends of Dune trilogy",
+            "group": 60
+        },
+        {
+            "key": "omilia",
+            "Name": "Omilia Harkonnen",
+            "Gender": "female",
+            "House": "harkonnen",
+            "Context": "One of Xavier's three daughter with Octa, Omilia is a historical figure who contributed to the establishment and influence of House Harkonnen during its formative years in the Landsraad, the political assembly of noble houses. Details about her personality are sparse, but she is often associated with the early Harkonnen values of ambition and cunning, which set the tone for the house’s future trajectory. Omilia lived during the early days of House Harkonnen's rise, before it became one of the most infamous houses in the Imperium.",
+            "Reference": "- Prelude to Dune trilogy"
+        },
+        {
+            "key": "faykan",
+            "Name": "Faykan Butler (Corrino)",
+            "Gender": "male",
+            "House": "corrino",
+            "Context": "",
+            "Reference": "- Legends of Dune trilogy"
+        },
+        {
+            "key": "rikov",
+            "Name": "Rikov Butler",
+            "Gender": "male",
+            "House": "none",
+            "Context": "",
+            "Reference": "- Legends of Dune trilogy",
+            "group": 70
+        },
+        {
+            "key": "abulurd",
+            "Name": "Abulurd Butler (Harkonnen)",
+            "Gender": "male",
+            "House": "harkonnen",
+            "Context": "",
+            "Reference": "- Legends of Dune trilogy"
+        },
+        {
+            "key": "kohe",
+            "Name": "Kohe Tantor",
+            "Gender": "female",
+            "House": "none",
+            "Context": "",
+            "Reference": "- Legends of Dune trilogy",
+            "group": 70
+        },
+        {
+            "key": "willem",
+            "Name": "Willem Atriedes",
+            "Gender": "male",
+            "House": "atriedes",
+            "Context": "Duke Willem Atreides was the founder of House Atreides and its first representitive in the Landsraad League. Following his great-great-great-grandfather Vorian's supposed death at the hands of Valya Harkonnen's schemes, Willem schemed to kill her brother Danvis Harkonnen in revenge. When in competition with Danvis for the role of Imperial Chamberlain all the other candidates appeared dead, Willem was blamed, and when Danvis appeared dead he was expelled from a new list of candidates. Meanwhile, his cousin Luc Atreides and his family visited from Kepler. After Danvis' apparant death, he was killed by the Harkonnen cousin Gerhard in an act of kanly.",
+            "Reference": "- ?"
+        },
+        {
+            "key": "miklos",
+            "Name": "Miklos Atriedes",
+            "Gender": "male",
+            "House": "atriedes",
+            "Context": "",
+            "Reference": "- ?"
+        },
+        {
+            "key": "kean",
+            "Name": "Kean Atriedes",
+            "Gender": "male",
+            "House": "atriedes",
+            "Context": "",
+            "Reference": "- ?"
+        },
+        {
+            "key": "paulus",
+            "Name": "Paulus Atreides",
+            "Gender": "male",
+            "House": "atriedes",
+            "Context": "Paulus Atreides, known as the Old Duke, was the 25th Duke of Caladan and the father of Leto Atreides I. He was remembered as a strong and charismatic leader whose death by a drugged Salusan bull became one of the defining tragedies of House Atreides in the years just before Dune.",
+            "Reference": "- Prelude to Dune trilogy\n - Dune"
+        },
+        {
+            "key": "helena",
+            "Name": "Helena Richese",
+            "Gender": "female",
+            "House": "none",
+            "Context": "Helena Richese married Paulus Atreides and became the mother of Leto Atreides I. Her marriage linked House Atreides to House Richese, one of the long-standing noble families of the Imperium.",
+            "Reference": "- Prelude to Dune trilogy"
+        },
+        {
+            "key": "leto1",
+            "Name": "Leto Atreides I",
+            "Gender": "male",
+            "House": "atriedes",
+            "Context": "Leto Atreides I, the Just Duke, led House Atreides from Caladan to Arrakis and became one of the most admired nobles in the Imperium. His death in the Harkonnen-Corrino plot set in motion the rise of Paul Muad'Dib and the collapse of the old Imperial order.",
+            "Reference": "- Dune\n - Prelude to Dune trilogy"
+        },
+        {
+            "key": "mohiam",
+            "Name": "Gaius Helen Mohiam",
+            "Gender": "female",
+            "House": "benegesserit",
+            "Context": "Gaius Helen Mohiam, born Tanidia Nerus, served as Imperial Truthsayer to Shaddam IV and as one of the Bene Gesserit's most formidable Reverend Mothers. She secretly conceived Lady Jessica with Baron Vladimir Harkonnen as part of the Sisterhood's breeding program.",
+            "Reference": "- Dune\n - Dune Messiah\n - Prelude to Dune trilogy"
+        },
+        {
+            "key": "jessica",
+            "Name": "Lady Jessica",
+            "Gender": "female",
+            "House": "benegesserit",
+            "Context": "Lady Jessica was the Bene Gesserit-trained concubine of Duke Leto I and the secret biological daughter of Baron Vladimir Harkonnen and Gaius Helen Mohiam. Through her, the Atreides, Harkonnen, Corrino-adjacent, and Bene Gesserit threads of the saga converge.",
+            "Reference": "- Dune\n - Dune Messiah\n - Children of Dune"
+        },
+        {
+            "key": "paul",
+            "Name": "Paul Atreides / Muad'Dib",
+            "Gender": "male",
+            "House": "atriedes",
+            "Context": "Paul Atreides became Muad'Dib, the Kwisatz Haderach, Emperor of the Known Universe, and later the mysterious Preacher. His rise transformed the political, religious, and ecological future of the Imperium.",
+            "Reference": "- Dune\n - Dune Messiah\n - Children of Dune"
+        },
+        {
+            "key": "alia",
+            "Name": "Alia Atreides",
+            "Gender": "female",
+            "House": "atriedes",
+            "Context": "Alia Atreides was born preborn and awakened in the womb, giving her access to Other Memory from birth. She later ruled as regent, fell under the influence of the Baron's persona, and ultimately died tragically during the collapse of her rule.",
+            "Reference": "- Dune\n - Dune Messiah\n - Children of Dune"
+        },
+        {
+            "key": "liet",
+            "Name": "Liet-Kynes",
+            "Gender": "male",
+            "House": "none",
+            "Context": "Liet-Kynes was the Imperial Planetologist of Arrakis and the son of Pardot Kynes. He became a central figure in the Fremen ecological dream and the father of Chani.",
+            "Reference": "- Dune"
+        },
+        {
+            "key": "faroula",
+            "Name": "Faroula",
+            "Gender": "female",
+            "House": "none",
+            "Context": "Faroula was the mother of Chani and part of the Fremen lineage that would later merge with House Atreides through Paul.",
+            "Reference": "- Dune Messiah"
+        },
+        {
+            "key": "chani",
+            "Name": "Chani",
+            "Gender": "female",
+            "House": "none",
+            "Context": "Chani was a Fremen warrior, Sayyadina, and the beloved partner of Paul Atreides. She died giving birth to the twins Leto II and Ghanima, cementing her place at the heart of the Atreides future.",
+            "Reference": "- Dune\n - Dune Messiah"
+        },
+        {
+            "key": "leto2",
+            "Name": "Leto Atreides II",
+            "Gender": "male",
+            "House": "atriedes",
+            "Context": "Leto Atreides II became the God Emperor, merging with sandtrout to transform his body and ruling for roughly 3,500 years. His tyranny and long breeding program were aimed at securing humanity's long-term survival.",
+            "Reference": "- Children of Dune\n - God Emperor of Dune"
+        },
+        {
+            "key": "ghanima",
+            "Name": "Ghanima Atreides",
+            "Gender": "female",
+            "House": "atriedes",
+            "Context": "Ghanima Atreides, twin sister to Leto II, survived the dangerous pressures of being preborn and carried the Atreides bloodline forward. Her union with Farad'n Corrino eventually merged the Atreides and Corrino lines.",
+            "Reference": "- Children of Dune\n - God Emperor of Dune"
+        },
+        {
+            "key": "faradn",
+            "Name": "Farad'n Corrino",
+            "Gender": "male",
+            "House": "corrino",
+            "Context": "Farad'n Corrino, also known as Harq al-Ada, was the son of Wensicia Corrino and Dalak Fenring. Trained under Jessica, he became Royal Scribe and joined with Ghanima in the political and genealogical union that merged Corrino and Atreides bloodlines.",
+            "Reference": "- Children of Dune\n - God Emperor of Dune"
+        },
+        {
+            "key": "moneo",
+            "Name": "Moneo Atreides",
+            "Gender": "male",
+            "House": "atriedes",
+            "Context": "Moneo Atreides served as the God Emperor's greatest majordomo and one of the principal managers of Leto II's empire. He stood in the direct Atreides line that continued through Ghanima and Farad'n.",
+            "Reference": "- God Emperor of Dune"
+        },
+        {
+            "key": "siona",
+            "Name": "Siona Atreides",
+            "Gender": "female",
+            "House": "atriedes",
+            "Context": "Siona Atreides represented the culmination of Leto II's long breeding program, carrying the critical no-gene that hid her descendants from prescient vision. She also played a direct role in Leto II's downfall.",
+            "Reference": "- God Emperor of Dune"
+        },
+        {
+            "key": "loschy",
+            "Name": "Loschy Teg",
+            "Gender": "male",
+            "House": "none",
+            "Context": "Loschy Teg stood in the long post-Siona Atreides line and became the father of Miles Teg.",
+            "Reference": "- Heretics of Dune\n - Chapterhouse: Dune"
+        },
+        {
+            "key": "janet",
+            "Name": "Janet Roxbrough",
+            "Gender": "female",
+            "House": "none",
+            "Context": "Janet Roxbrough was the mother of Miles Teg and part of the later Atreides-descended line shaped by Bene Gesserit breeding plans.",
+            "Reference": "- Heretics of Dune\n - Chapterhouse: Dune"
+        },
+        {
+            "key": "miles",
+            "Name": "Miles Teg",
+            "Gender": "male",
+            "House": "none",
+            "Context": "Miles Teg became Supreme Bashar of the Bene Gesserit and one of the greatest military commanders in the later Dune saga. He descended from Siona Atreides and fathered Darwi Odrade.",
+            "Reference": "- Heretics of Dune\n - Chapterhouse: Dune"
+        },
+        {
+            "key": "darwi",
+            "Name": "Darwi Odrade",
+            "Gender": "female",
+            "House": "benegesserit",
+            "Context": "Darwi Odrade rose to become Mother Superior of the Bene Gesserit and one of the most important leaders of the late Imperium. Through her, the Atreides legacy resurfaced thousands of years after Paul in the very institution Raquella founded.",
+            "Reference": "- Heretics of Dune\n - Chapterhouse: Dune"
+        },
+        {
+            "key": "dirdos",
+            "Name": "Dirdos Harkonnen",
+            "Gender": "male",
+            "House": "harkonnen",
+            "Context": "Dirdos Harkonnen formally established House Harkonnen on Lankiveil after the death of Abulurd Butler Harkonnen and carried the line into the Landsraad.",
+            "Reference": "- Schools of Dune trilogy"
+        },
+        {
+            "key": "valya",
+            "Name": "Valya Harkonnen",
+            "Gender": "female",
+            "House": "benegesserit",
+            "Context": "Valya Harkonnen became one of the defining early leaders of the Sisterhood, later giving the order the name Bene Gesserit. She deepened the Atreides-Harkonnen feud and helped shape the Sisterhood's political future for millennia.",
+            "Reference": "- Schools of Dune trilogy\n - Dune: Prophecy"
+        },
+        {
+            "key": "tula",
+            "Name": "Tula Harkonnen",
+            "Gender": "female",
+            "House": "benegesserit",
+            "Context": "Tula Harkonnen was Valya's sister, a Reverend Mother, and a key operative in the Harkonnen campaign against the Atreides line. Her infiltration of House Atreides through marriage to Orry Atreides became one of the period's most infamous betrayals.",
+            "Reference": "- Schools of Dune trilogy\n - Dune: Prophecy"
+        },
+        {
+            "key": "griffin",
+            "Name": "Griffin Harkonnen",
+            "Gender": "male",
+            "House": "harkonnen",
+            "Context": "Griffin Harkonnen, brother to Valya and Tula, pursued Vorian Atreides on Kepler in search of vengeance and died in that conflict.",
+            "Reference": "- Sisterhood of Dune"
+        },
+        {
+            "key": "orry",
+            "Name": "Orry Atreides",
+            "Gender": "male",
+            "House": "atriedes",
+            "Context": "Orry Atreides married Tula Harkonnen, unaware that she had entered the union as part of a deadly Harkonnen vendetta against House Atreides.",
+            "Reference": "- Schools of Dune trilogy"
+        },
+        {
+            "key": "danvis",
+            "Name": "Danvis Harkonnen",
+            "Gender": "male",
+            "House": "harkonnen",
+            "Context": "Danvis Harkonnen competed with Willem Atreides for the role of Imperial Chamberlain during the Schools of Dune era, representing another flare-up in the ancient feud between the two houses.",
+            "Reference": "- Schools of Dune trilogy"
+        },
+        {
+            "key": "vladimir2",
+            "Name": "Vladimir II Harkonnen",
+            "Gender": "male",
+            "House": "harkonnen",
+            "Context": "An intermediate Harkonnen ancestor included from the lineage notes to bridge the line between Dirdos and the later Harkonnens of Giedi Prime.",
+            "Reference": "- Dune genealogical records"
+        },
+        {
+            "key": "aleksandr4",
+            "Name": "Aleksandr IV Harkonnen",
+            "Gender": "male",
+            "House": "harkonnen",
+            "Context": "An intermediate Harkonnen ancestor included from the lineage notes as part of the long succession from the early Harkonnens to Baron Vladimir's era.",
+            "Reference": "- Dune genealogical records"
+        },
+        {
+            "key": "abulurd3",
+            "Name": "Abulurd III Harkonnen",
+            "Gender": "male",
+            "House": "harkonnen",
+            "Context": "An intermediate Harkonnen ancestor included from the lineage notes as part of the house's successive generations.",
+            "Reference": "- Dune genealogical records"
+        },
+        {
+            "key": "abulurd6",
+            "Name": "Abulurd VI Harkonnen",
+            "Gender": "male",
+            "House": "harkonnen",
+            "Context": "An intermediate Harkonnen ancestor included from the lineage notes as part of the house's successive generations.",
+            "Reference": "- Dune genealogical records"
+        },
+        {
+            "key": "petr3",
+            "Name": "Petr III Harkonnen",
+            "Gender": "male",
+            "House": "harkonnen",
+            "Context": "An intermediate Harkonnen ancestor included from the lineage notes as part of the house's successive generations.",
+            "Reference": "- Dune genealogical records"
+        },
+        {
+            "key": "konstantin2",
+            "Name": "Konstantin II Harkonnen",
+            "Gender": "male",
+            "House": "harkonnen",
+            "Context": "An intermediate Harkonnen ancestor included from the lineage notes as part of the house's successive generations.",
+            "Reference": "- Dune genealogical records"
+        },
+        {
+            "key": "dmitrii4",
+            "Name": "Dmitrii IV Harkonnen",
+            "Gender": "male",
+            "House": "harkonnen",
+            "Context": "An intermediate Harkonnen ancestor included from the lineage notes as part of the house's successive generations.",
+            "Reference": "- Dune genealogical records"
+        },
+        {
+            "key": "iraklii",
+            "Name": "Iraklii Harkonnen",
+            "Gender": "male",
+            "House": "harkonnen",
+            "Context": "An intermediate Harkonnen ancestor included from the lineage notes as part of the house's successive generations.",
+            "Reference": "- Dune genealogical records"
+        },
+        {
+            "key": "ivan",
+            "Name": "Ivan Harkonnen",
+            "Gender": "male",
+            "House": "harkonnen",
+            "Context": "An intermediate Harkonnen ancestor included from the lineage notes as part of the house's successive generations.",
+            "Reference": "- Dune genealogical records"
+        },
+        {
+            "key": "iosif",
+            "Name": "Iosif Harkonnen",
+            "Gender": "male",
+            "House": "harkonnen",
+            "Context": "An intermediate Harkonnen ancestor included from the lineage notes as part of the house's successive generations.",
+            "Reference": "- Dune genealogical records"
+        },
+        {
+            "key": "andrei",
+            "Name": "Andrei Harkonnen",
+            "Gender": "male",
+            "House": "harkonnen",
+            "Context": "An intermediate Harkonnen ancestor included from the lineage notes as part of the house's successive generations.",
+            "Reference": "- Dune genealogical records"
+        },
+        {
+            "key": "gunseng",
+            "Name": "Gunseng Harkonnen-Rabban",
+            "Gender": "male",
+            "House": "harkonnen",
+            "Context": "An intermediate Harkonnen-Rabban ancestor included from the lineage notes as part of the house's successive generations.",
+            "Reference": "- Dune genealogical records"
+        },
+        {
+            "key": "yevgeny",
+            "Name": "Yevgeny Harkonnen-Rabban",
+            "Gender": "male",
+            "House": "harkonnen",
+            "Context": "An intermediate Harkonnen-Rabban ancestor included from the lineage notes as part of the house's successive generations.",
+            "Reference": "- Dune genealogical records"
+        },
+        {
+            "key": "pimen",
+            "Name": "Pimen Harkonnen-Rabban",
+            "Gender": "male",
+            "House": "harkonnen",
+            "Context": "An intermediate Harkonnen-Rabban ancestor included from the lineage notes as part of the house's successive generations.",
+            "Reference": "- Dune genealogical records"
+        },
+        {
+            "key": "dmitri",
+            "Name": "Dmitri Harkonnen",
+            "Gender": "male",
+            "House": "harkonnen",
+            "Context": "Dmitri Harkonnen ruled Giedi Prime and elevated House Harkonnen to Great House status in the centuries before Dune. He fathered Baron Vladimir Harkonnen and Abulurd Rabban through different marriages.",
+            "Reference": "- Prelude to Dune trilogy"
+        },
+        {
+            "key": "victoria",
+            "Name": "Victoria Harkonnen",
+            "Gender": "female",
+            "House": "none",
+            "Context": "Victoria was Dmitri Harkonnen's first wife and the mother of Baron Vladimir Harkonnen.",
+            "Reference": "- Prelude to Dune trilogy"
+        },
+        {
+            "key": "daphne",
+            "Name": "Daphne Harkonnen",
+            "Gender": "female",
+            "House": "none",
+            "Context": "Daphne was Dmitri Harkonnen's second wife and the mother of Abulurd Rabban.",
+            "Reference": "- Prelude to Dune trilogy"
+        },
+        {
+            "key": "vladimir",
+            "Name": "Baron Vladimir Harkonnen",
+            "Gender": "male",
+            "House": "harkonnen",
+            "Context": "Baron Vladimir Harkonnen was Siridar Baron of Giedi Prime and the principal Harkonnen antagonist of Dune. He was also the secret biological father of Lady Jessica, making Paul and Alia both Atreides and Harkonnen by blood.",
+            "Reference": "- Dune\n - Prelude to Dune trilogy"
+        },
+        {
+            "key": "abulurd2",
+            "Name": "Abulurd Harkonnen II / Abulurd Rabban",
+            "Gender": "male",
+            "House": "harkonnen",
+            "Context": "Abulurd Rabban, half-brother to Baron Vladimir, rejected much of Harkonnen brutality and adopted his wife's surname Rabban. He was later murdered by his own son Glossu Beast Rabban.",
+            "Reference": "- Prelude to Dune trilogy"
+        },
+        {
+            "key": "emmi",
+            "Name": "Emmi Rabban",
+            "Gender": "female",
+            "House": "none",
+            "Context": "Emmi Rabban was the wife of Abulurd Rabban and the mother of Glossu Beast Rabban and Feyd-Rautha Harkonnen.",
+            "Reference": "- Prelude to Dune trilogy"
+        },
+        {
+            "key": "glossu",
+            "Name": "Glossu \"Beast\" Rabban",
+            "Gender": "male",
+            "House": "harkonnen",
+            "Context": "Glossu Beast Rabban was the Baron's brutal elder nephew and one of the most feared Harkonnen enforcers on Arrakis. His savagery became a key part of the Baron's plan to make Feyd appear preferable by contrast.",
+            "Reference": "- Dune\n - Prelude to Dune trilogy"
+        },
+        {
+            "key": "feyd",
+            "Name": "Feyd-Rautha Harkonnen",
+            "Gender": "male",
+            "House": "harkonnen",
+            "Context": "Feyd-Rautha Harkonnen was Baron Vladimir's chosen heir, a cunning gladiator and political weapon. He died in single combat against Paul Atreides at the climax of Dune.",
+            "Reference": "- Dune"
+        },
+        {
+            "key": "jessicaboro",
+            "Name": "Jessica Boro-Ginjo",
+            "Gender": "female",
+            "House": "none",
+            "Context": "Jessica Boro-Ginjo was the consort associated with Faykan Corrino in the lineage notes and the mother of Jules Corrino.",
+            "Reference": "- Schools of Dune trilogy"
+        },
+        {
+            "key": "jules",
+            "Name": "Jules Corrino",
+            "Gender": "male",
+            "House": "corrino",
+            "Context": "Jules Corrino, second Padishah Emperor, consolidated the early Corrino Imperium after Faykan.",
+            "Reference": "- Schools of Dune trilogy"
+        },
+        {
+            "key": "salvador",
+            "Name": "Salvador Corrino",
+            "Gender": "male",
+            "House": "corrino",
+            "Context": "Salvador Corrino became the third Padishah Emperor and took a hard line against the Sisterhood, helping drive its relocation and reinvention.",
+            "Reference": "- Schools of Dune trilogy"
+        },
+        {
+            "key": "roderick",
+            "Name": "Roderick Corrino",
+            "Gender": "male",
+            "House": "corrino",
+            "Context": "Roderick Corrino, the fourth Padishah Emperor, was remembered as more measured than Salvador during the evolving imperial relationship with the Sisterhood and noble houses.",
+            "Reference": "- Schools of Dune trilogy"
+        },
+        {
+            "key": "haditha",
+            "Name": "Haditha",
+            "Gender": "female",
+            "House": "none",
+            "Context": "Haditha was the wife of Roderick Corrino and the mother of Javicco Corrino.",
+            "Reference": "- Schools of Dune trilogy"
+        },
+        {
+            "key": "javicco",
+            "Name": "Javicco Corrino",
+            "Gender": "male",
+            "House": "corrino",
+            "Context": "Javicco Corrino became the fifth Padishah Emperor in the Corrino line.",
+            "Reference": "- Navigators of Dune"
+        },
+        {
+            "key": "hassik3",
+            "Name": "Hassik Corrino III",
+            "Gender": "male",
+            "House": "corrino",
+            "Context": "Hassik Corrino III relocated the Imperial capital to Kaitain after Salusa Secundus was devastated, helping reshape the political geography of the Corrino Imperium.",
+            "Reference": "- Dune appendix"
+        },
+        {
+            "key": "shaddam1",
+            "Name": "Shaddam Corrino I",
+            "Gender": "male",
+            "House": "corrino",
+            "Context": "An intermediate Corrino emperor included from the lineage notes as part of the succession between the early Imperium and the era of Elrood IX.",
+            "Reference": "- Various canon references"
+        },
+        {
+            "key": "shakkad",
+            "Name": "Shakkad the Wise",
+            "Gender": "male",
+            "House": "corrino",
+            "Context": "An intermediate Corrino emperor included from the lineage notes as part of the long succession to Shaddam IV.",
+            "Reference": "- Various canon references"
+        },
+        {
+            "key": "mandias",
+            "Name": "Mandias the Terrible",
+            "Gender": "male",
+            "House": "corrino",
+            "Context": "An intermediate Corrino emperor included from the lineage notes as part of the long succession to Shaddam IV.",
+            "Reference": "- Various canon references"
+        },
+        {
+            "key": "fondil1",
+            "Name": "Fondil Corrino I",
+            "Gender": "male",
+            "House": "corrino",
+            "Context": "An intermediate Corrino emperor included from the lineage notes as part of the long succession to Shaddam IV.",
+            "Reference": "- Various canon references"
+        },
+        {
+            "key": "fondil2",
+            "Name": "Fondil Corrino II",
+            "Gender": "male",
+            "House": "corrino",
+            "Context": "An intermediate Corrino emperor included from the lineage notes as part of the long succession to Shaddam IV.",
+            "Reference": "- Various canon references"
+        },
+        {
+            "key": "ishaq15",
+            "Name": "Ishaq Corrino XV",
+            "Gender": "male",
+            "House": "corrino",
+            "Context": "An intermediate Corrino emperor included from the lineage notes as part of the long succession to Shaddam IV.",
+            "Reference": "- Various canon references"
+        },
+        {
+            "key": "idriss1",
+            "Name": "Idriss Corrino I",
+            "Gender": "male",
+            "House": "corrino",
+            "Context": "An intermediate Corrino emperor included from the lineage notes as part of the long succession to Shaddam IV.",
+            "Reference": "- Various canon references"
+        },
+        {
+            "key": "raphael1",
+            "Name": "Raphael Corrino I",
+            "Gender": "male",
+            "House": "corrino",
+            "Context": "An intermediate Corrino emperor included from the lineage notes as part of the long succession to Shaddam IV.",
+            "Reference": "- Various canon references"
+        },
+        {
+            "key": "hyek2",
+            "Name": "Hyek Corrino II",
+            "Gender": "male",
+            "House": "corrino",
+            "Context": "An intermediate Corrino emperor included from the lineage notes as part of the long succession to Shaddam IV.",
+            "Reference": "- Various canon references"
+        },
+        {
+            "key": "vutier2",
+            "Name": "Vutier Corrino II",
+            "Gender": "male",
+            "House": "corrino",
+            "Context": "An intermediate Corrino emperor included from the lineage notes as part of the long succession to Shaddam IV.",
+            "Reference": "- Various canon references"
+        },
+        {
+            "key": "fondil3",
+            "Name": "Fondil Corrino III",
+            "Gender": "male",
+            "House": "corrino",
+            "Context": "Fondil Corrino III, called the Hunter, was a renowned emperor and the father of Elrood IX.",
+            "Reference": "- Prelude to Dune trilogy"
+        },
+        {
+            "key": "elrood9",
+            "Name": "Elrood Corrino IX",
+            "Gender": "male",
+            "House": "corrino",
+            "Context": "Elrood IX ruled the Imperium for 138 years and fathered both legitimate and illegitimate heirs, including Shaddam IV and Tyros Reffa.",
+            "Reference": "- Prelude to Dune trilogy"
+        },
+        {
+            "key": "shando",
+            "Name": "Lady Shando Vernius",
+            "Gender": "female",
+            "House": "none",
+            "Context": "Lady Shando Vernius was the mother of Elrood IX's illegitimate son Tyros Reffa.",
+            "Reference": "- Prelude to Dune trilogy"
+        },
+        {
+            "key": "tyros",
+            "Name": "Tyros Reffa",
+            "Gender": "male",
+            "House": "none",
+            "Context": "Tyros Reffa was the illegitimate son of Elrood IX whose existence drove paranoid purges and dynastic violence under Shaddam IV.",
+            "Reference": "- Prelude to Dune trilogy"
+        },
+        {
+            "key": "fafnir",
+            "Name": "Crown Prince Fafnir",
+            "Gender": "male",
+            "House": "corrino",
+            "Context": "Crown Prince Fafnir stood ahead of Shaddam in the Corrino line of succession before being removed by palace intrigue.",
+            "Reference": "- Prelude to Dune trilogy"
+        },
+        {
+            "key": "shaddam4",
+            "Name": "Shaddam Corrino IV",
+            "Gender": "male",
+            "House": "corrino",
+            "Context": "Shaddam IV was the final Corrino Emperor to sit securely on the throne before Paul Atreides overthrew him. His alliance with House Harkonnen helped destroy Duke Leto but also destroyed the old imperial balance.",
+            "Reference": "- Dune\n - Prelude to Dune trilogy"
+        },
+        {
+            "key": "anirul",
+            "Name": "Lady Anirul",
+            "Gender": "female",
+            "House": "benegesserit",
+            "Context": "Lady Anirul, a Bene Gesserit of hidden rank, became the wife of Shaddam IV and the mother of his daughters. Within Bene Gesserit planning she was known as the Kwisatz Mother.",
+            "Reference": "- Prelude to Dune trilogy"
+        },
+        {
+            "key": "irulan",
+            "Name": "Princess Irulan Corrino",
+            "Gender": "female",
+            "House": "corrino",
+            "Context": "Princess Irulan Corrino became Paul Atreides's political wife and the historian of the Atreides era. Her writings frame much of what readers learn about Paul's rise and rule.",
+            "Reference": "- Dune\n - Dune Messiah\n - Children of Dune"
+        },
+        {
+            "key": "chalice",
+            "Name": "Princess Chalice Corrino",
+            "Gender": "female",
+            "House": "corrino",
+            "Context": "Princess Chalice Corrino was one of Shaddam IV's daughters, later exiled to Salusa Secundus with her family.",
+            "Reference": "- Prelude to Dune trilogy"
+        },
+        {
+            "key": "wensicia",
+            "Name": "Princess Wensicia Corrino",
+            "Gender": "female",
+            "House": "corrino",
+            "Context": "Princess Wensicia Corrino sought to restore Corrino power through her son Farad'n, but her schemes ultimately failed and she was marginalized by the new balance of power.",
+            "Reference": "- Children of Dune"
+        },
+        {
+            "key": "josifa",
+            "Name": "Princess Josifa Corrino",
+            "Gender": "female",
+            "House": "corrino",
+            "Context": "Princess Josifa Corrino was one of the daughters of Shaddam IV and part of the exiled Corrino household after Paul's victory.",
+            "Reference": "- Dune appendix"
+        },
+        {
+            "key": "rugi",
+            "Name": "Princess Rugi Corrino",
+            "Gender": "female",
+            "House": "corrino",
+            "Context": "Princess Rugi Corrino was the youngest of Shaddam IV's daughters and part of the displaced Corrino household after Paul's rise.",
+            "Reference": "- Dune appendix"
+        },
+        {
+            "key": "dalak",
+            "Name": "Dalak Fenring",
+            "Gender": "male",
+            "House": "fenring",
+            "Context": "Dalak Fenring was associated with the Corrino orbit and, in the lineage notes, is the father of Farad'n Corrino with Princess Wensicia.",
+            "Reference": "- Children of Dune\n - God Emperor of Dune"
+        },
+        {
+            "key": "harishka",
+            "Name": "Harishka",
+            "Gender": "female",
+            "House": "benegesserit",
+            "Context": "Harishka is included from the lineage notes as one of the named Reverend Mothers or Mother Superiors in the long Bene Gesserit succession.",
+            "Reference": "- Various novels"
+        },
+        {
+            "key": "margot",
+            "Name": "Margot Fenring",
+            "Gender": "female",
+            "House": "benegesserit",
+            "Context": "Margot Fenring was a Bene Gesserit operative and one of the notable later figures named in the Sisterhood's long succession.",
+            "Reference": "- Various novels"
+        },
+        {
+            "key": "taraza",
+            "Name": "Alma Mavis Taraza",
+            "Gender": "female",
+            "House": "benegesserit",
+            "Context": "Alma Mavis Taraza became Mother Superior of the Bene Gesserit in the later Imperium and helped shape the order's strategy in the face of the scattering's consequences.",
+            "Reference": "- Heretics of Dune"
+        },
+        {
+            "key": "bellonda",
+            "Name": "Bellonda",
+            "Gender": "female",
+            "House": "benegesserit",
+            "Context": "Bellonda was a senior Bene Gesserit advisor and one of the dominant personalities in the order's later leadership circle.",
+            "Reference": "- Heretics of Dune\n - Chapterhouse: Dune"
+        },
+        {
+            "key": "sheeana",
+            "Name": "Sheeana",
+            "Gender": "female",
+            "House": "benegesserit",
+            "Context": "Sheeana possessed the rare ability to command sandworms and became one of the most symbolically powerful figures in the later Dune saga. She eventually escaped into the unknown with Duncan Idaho at the end of Chapterhouse.",
+            "Reference": "- Heretics of Dune\n - Chapterhouse: Dune"
+        },
+        {
+            "key": "murbella",
+            "Name": "Murbella",
+            "Gender": "female",
+            "House": "benegesserit",
+            "Context": "Murbella began as an Honored Matre but was transformed by Bene Gesserit training and later unified the two organizations into the New Sisterhood.",
+            "Reference": "- Chapterhouse: Dune\n - Hunters of Dune\n - Sandworms of Dune"
         }
+    ],
+    "linkDataArray": [
+        {
+            "from": "Root",
+            "to": "atreus",
+            "isRootLink": true
+        },
+        {
+            "from": "Root",
+            "to": "katarina",
+            "isRootLink": true
+        },
+        {
+            "from": "Root",
+            "to": "manion",
+            "isRootLink": true
+        },
+        {
+            "from": "atreus",
+            "to": "agamemnon"
+        },
+        {
+            "from": "agamemnon",
+            "to": "vorian"
+        },
+        {
+            "from": "agamemnon",
+            "to": "hyla"
+        },
+        {
+            "from": "agamemnon",
+            "to": "andros"
+        },
+        {
+            "from": "vorian",
+            "to": "karida",
+            "category": "HorizontalLeft"
+        },
+        {
+            "from": "vorian",
+            "to": "mariella",
+            "category": "HorizontalLeft"
+        },
+        {
+            "from": "vorian",
+            "to": "estes"
+        },
+        {
+            "from": "vorian",
+            "to": "kagin"
+        },
+        {
+            "from": "leronica",
+            "to": "kagin"
+        },
+        {
+            "from": "leronica",
+            "to": "estes"
+        },
+        {
+            "from": "vorian",
+            "to": "leronica",
+            "category": "HorizontalRight"
+        },
+        {
+            "from": "vorian",
+            "to": "helmina"
+        },
+        {
+            "from": "karida",
+            "to": "helmina"
+        },
+        {
+            "from": "helmina",
+            "to": "raquella"
+        },
+        {
+            "from": "raquella",
+            "to": "arlett"
+        },
+        {
+            "from": "mohandes",
+            "to": "raquella",
+            "category": "HorizontalRight"
+        },
+        {
+            "from": "mohandes",
+            "to": "arlett"
+        },
+        {
+            "from": "arlett",
+            "to": "doritea"
+        },
+        {
+            "from": "ulf",
+            "to": "katarina",
+            "category": "HorizontalLeft"
+        },
+        {
+            "from": "ulf",
+            "to": "piers"
+        },
+        {
+            "from": "katarina",
+            "to": "piers"
+        },
+        {
+            "from": "ulf",
+            "to": "xavier"
+        },
+        {
+            "from": "katarina",
+            "to": "xavier"
+        },
+        {
+            "from": "xavier",
+            "to": "serena",
+            "category": "HorizontalLeft"
+        },
+        {
+            "from": "manion",
+            "to": "livia",
+            "category": "HorizontalLeft"
+        },
+        {
+            "from": "xavier",
+            "to": "babymanion"
+        },
+        {
+            "from": "serena",
+            "to": "babymanion"
+        },
+        {
+            "from": "livia",
+            "to": "serena"
+        },
+        {
+            "from": "manion",
+            "to": "serena"
+        },
+        {
+            "from": "octa",
+            "to": "xavier",
+            "category": "HorizontalLeft"
+        },
+        {
+            "from": "livia",
+            "to": "octa"
+        },
+        {
+            "from": "manion",
+            "to": "octa"
+        },
+        {
+            "from": "xavier",
+            "to": "wandra"
+        },
+        {
+            "from": "octa",
+            "to": "wandra"
+        },
+        {
+            "from": "xavier",
+            "to": "roella"
+        },
+        {
+            "from": "octa",
+            "to": "roella"
+        },
+        {
+            "from": "quentin",
+            "to": "wandra",
+            "category": "HorizontalRight"
+        },
+        {
+            "from": "xavier",
+            "to": "omilia"
+        },
+        {
+            "from": "octa",
+            "to": "omilia"
+        },
+        {
+            "from": "wandra",
+            "to": "faykan"
+        },
+        {
+            "from": "quentin",
+            "to": "faykan"
+        },
+        {
+            "from": "wandra",
+            "to": "abulurd"
+        },
+        {
+            "from": "quentin",
+            "to": "abulurd"
+        },
+        {
+            "from": "wandra",
+            "to": "rikov"
+        },
+        {
+            "from": "quentin",
+            "to": "rikov"
+        },
+        {
+            "from": "kohe",
+            "to": "rikov",
+            "category": "HorizontalRight"
+        },
+        {
+            "from": "vorian",
+            "to": "willem"
+        },
+        {
+            "from": "willem",
+            "to": "miklos"
+        },
+        {
+            "from": "miklos",
+            "to": "kean"
+        },
+        {
+            "from": "doritea",
+            "to": "timePeriodBeneGesserit"
+        },
+        {
+            "from": "kean",
+            "to": "paulus"
+        },
+        {
+            "from": "paulus",
+            "to": "helena",
+            "category": "HorizontalRight"
+        },
+        {
+            "from": "paulus",
+            "to": "leto1"
+        },
+        {
+            "from": "helena",
+            "to": "leto1"
+        },
+        {
+            "from": "vladimir",
+            "to": "jessica"
+        },
+        {
+            "from": "mohiam",
+            "to": "jessica"
+        },
+        {
+            "from": "vladimir",
+            "to": "mohiam",
+            "category": "HorizontalRight"
+        },
+        {
+            "from": "leto1",
+            "to": "jessica",
+            "category": "HorizontalRight"
+        },
+        {
+            "from": "leto1",
+            "to": "paul"
+        },
+        {
+            "from": "jessica",
+            "to": "paul"
+        },
+        {
+            "from": "leto1",
+            "to": "alia"
+        },
+        {
+            "from": "jessica",
+            "to": "alia"
+        },
+        {
+            "from": "liet",
+            "to": "chani"
+        },
+        {
+            "from": "faroula",
+            "to": "chani"
+        },
+        {
+            "from": "paul",
+            "to": "chani",
+            "category": "HorizontalRight"
+        },
+        {
+            "from": "paul",
+            "to": "leto2"
+        },
+        {
+            "from": "chani",
+            "to": "leto2"
+        },
+        {
+            "from": "paul",
+            "to": "ghanima"
+        },
+        {
+            "from": "chani",
+            "to": "ghanima"
+        },
+        {
+            "from": "ghanima",
+            "to": "faradn",
+            "category": "HorizontalRight"
+        },
+        {
+            "from": "ghanima",
+            "to": "moneo"
+        },
+        {
+            "from": "faradn",
+            "to": "moneo"
+        },
+        {
+            "from": "moneo",
+            "to": "siona"
+        },
+        {
+            "from": "siona",
+            "to": "loschy"
+        },
+        {
+            "from": "loschy",
+            "to": "janet",
+            "category": "HorizontalRight"
+        },
+        {
+            "from": "loschy",
+            "to": "miles"
+        },
+        {
+            "from": "janet",
+            "to": "miles"
+        },
+        {
+            "from": "miles",
+            "to": "darwi"
+        },
+        {
+            "from": "abulurd",
+            "to": "dirdos"
+        },
+        {
+            "from": "dirdos",
+            "to": "danvis"
+        },
+        {
+            "from": "dirdos",
+            "to": "valya"
+        },
+        {
+            "from": "dirdos",
+            "to": "tula"
+        },
+        {
+            "from": "dirdos",
+            "to": "griffin"
+        },
+        {
+            "from": "tula",
+            "to": "orry",
+            "category": "HorizontalRight"
+        },
+        {
+            "from": "dirdos",
+            "to": "vladimir2"
+        },
+        {
+            "from": "vladimir2",
+            "to": "aleksandr4"
+        },
+        {
+            "from": "aleksandr4",
+            "to": "abulurd3"
+        },
+        {
+            "from": "abulurd3",
+            "to": "abulurd6"
+        },
+        {
+            "from": "abulurd6",
+            "to": "petr3"
+        },
+        {
+            "from": "petr3",
+            "to": "konstantin2"
+        },
+        {
+            "from": "konstantin2",
+            "to": "dmitrii4"
+        },
+        {
+            "from": "dmitrii4",
+            "to": "iraklii"
+        },
+        {
+            "from": "iraklii",
+            "to": "ivan"
+        },
+        {
+            "from": "ivan",
+            "to": "iosif"
+        },
+        {
+            "from": "iosif",
+            "to": "andrei"
+        },
+        {
+            "from": "andrei",
+            "to": "gunseng"
+        },
+        {
+            "from": "gunseng",
+            "to": "yevgeny"
+        },
+        {
+            "from": "yevgeny",
+            "to": "pimen"
+        },
+        {
+            "from": "pimen",
+            "to": "dmitri"
+        },
+        {
+            "from": "dmitri",
+            "to": "victoria",
+            "category": "HorizontalRight"
+        },
+        {
+            "from": "dmitri",
+            "to": "daphne",
+            "category": "HorizontalRight"
+        },
+        {
+            "from": "dmitri",
+            "to": "vladimir"
+        },
+        {
+            "from": "victoria",
+            "to": "vladimir"
+        },
+        {
+            "from": "dmitri",
+            "to": "abulurd2"
+        },
+        {
+            "from": "daphne",
+            "to": "abulurd2"
+        },
+        {
+            "from": "abulurd2",
+            "to": "emmi",
+            "category": "HorizontalRight"
+        },
+        {
+            "from": "abulurd2",
+            "to": "glossu"
+        },
+        {
+            "from": "emmi",
+            "to": "glossu"
+        },
+        {
+            "from": "abulurd2",
+            "to": "feyd"
+        },
+        {
+            "from": "emmi",
+            "to": "feyd"
+        },
+        {
+            "from": "faykan",
+            "to": "jessicaboro",
+            "category": "HorizontalRight"
+        },
+        {
+            "from": "faykan",
+            "to": "jules"
+        },
+        {
+            "from": "jessicaboro",
+            "to": "jules"
+        },
+        {
+            "from": "jules",
+            "to": "salvador"
+        },
+        {
+            "from": "jules",
+            "to": "roderick"
+        },
+        {
+            "from": "roderick",
+            "to": "haditha",
+            "category": "HorizontalRight"
+        },
+        {
+            "from": "roderick",
+            "to": "javicco"
+        },
+        {
+            "from": "haditha",
+            "to": "javicco"
+        },
+        {
+            "from": "javicco",
+            "to": "hassik3"
+        },
+        {
+            "from": "hassik3",
+            "to": "shaddam1"
+        },
+        {
+            "from": "shaddam1",
+            "to": "shakkad"
+        },
+        {
+            "from": "shakkad",
+            "to": "mandias"
+        },
+        {
+            "from": "mandias",
+            "to": "fondil1"
+        },
+        {
+            "from": "fondil1",
+            "to": "fondil2"
+        },
+        {
+            "from": "fondil2",
+            "to": "ishaq15"
+        },
+        {
+            "from": "ishaq15",
+            "to": "idriss1"
+        },
+        {
+            "from": "idriss1",
+            "to": "raphael1"
+        },
+        {
+            "from": "raphael1",
+            "to": "hyek2"
+        },
+        {
+            "from": "hyek2",
+            "to": "vutier2"
+        },
+        {
+            "from": "vutier2",
+            "to": "fondil3"
+        },
+        {
+            "from": "fondil3",
+            "to": "elrood9"
+        },
+        {
+            "from": "elrood9",
+            "to": "shando",
+            "category": "HorizontalRight"
+        },
+        {
+            "from": "elrood9",
+            "to": "tyros"
+        },
+        {
+            "from": "shando",
+            "to": "tyros"
+        },
+        {
+            "from": "elrood9",
+            "to": "fafnir"
+        },
+        {
+            "from": "elrood9",
+            "to": "shaddam4"
+        },
+        {
+            "from": "shaddam4",
+            "to": "anirul",
+            "category": "HorizontalRight"
+        },
+        {
+            "from": "shaddam4",
+            "to": "irulan"
+        },
+        {
+            "from": "anirul",
+            "to": "irulan"
+        },
+        {
+            "from": "shaddam4",
+            "to": "chalice"
+        },
+        {
+            "from": "anirul",
+            "to": "chalice"
+        },
+        {
+            "from": "shaddam4",
+            "to": "wensicia"
+        },
+        {
+            "from": "anirul",
+            "to": "wensicia"
+        },
+        {
+            "from": "shaddam4",
+            "to": "josifa"
+        },
+        {
+            "from": "anirul",
+            "to": "josifa"
+        },
+        {
+            "from": "shaddam4",
+            "to": "rugi"
+        },
+        {
+            "from": "anirul",
+            "to": "rugi"
+        },
+        {
+            "from": "wensicia",
+            "to": "dalak",
+            "category": "HorizontalRight"
+        },
+        {
+            "from": "wensicia",
+            "to": "faradn"
+        },
+        {
+            "from": "dalak",
+            "to": "faradn"
+        },
+        {
+            "from": "doritea",
+            "to": "harishka"
+        },
+        {
+            "from": "harishka",
+            "to": "margot"
+        },
+        {
+            "from": "margot",
+            "to": "taraza"
+        },
+        {
+            "from": "taraza",
+            "to": "bellonda"
+        },
+        {
+            "from": "Root",
+            "to": "sheeana",
+            "isRootLink": true
+        },
+        {
+            "from": "Root",
+            "to": "murbella",
+            "isRootLink": true
+        }
+    ]
+}
