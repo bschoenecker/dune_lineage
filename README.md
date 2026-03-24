@@ -12,4 +12,4 @@ Features:
 
 This diagram is being developed using GoJS, a powerful Javascript-based platform for creating interactive diagrams. You can find more information about it here: https://gojs.net/latest/index.html
 
-<img width="800" alt="screenshot of app GUI" src="./images/ss.png />
+![Screenshot of GUI](images/ss.png)
